@@ -3,7 +3,7 @@ layout: default
 ---
 
 <section id="profile" class="pt-36 bg-cv-dark relative" style="z-index: 0; height: 630px;">
-    <div class="container fixed inset-x-0 bottom-50">
+    <div class="container fixed inset-y-0 left-0 top-20 lg:inset-x-0 lg:bottom-50">
         <div class="flex flex-col justify-center items-center">
             <div class="profile_picture mx-auto border-4 border-cv-blue-primary rounded-full">
                 <img src="{{ site.baseurl }}/dist/images/profile_picture.png" class="rounded-full m-5 w-40 lg:w-52" alt="Refi Fauzan">
@@ -322,7 +322,7 @@ layout: default
 
         </div>
         <div class="modals">
-            <div id="ruby-modal" tabindex="-1" aria-hidden="true" class="fixed inset-0 z-10 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full">
+            <div id="ruby-modal" tabindex="-1" class="fixed inset-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full">
                 <div class="relative w-full max-w-md max-h-full">
                     <!-- Modal content -->
                     <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
@@ -1169,10 +1169,10 @@ layout: default
             </div>
         </div>
 
-        <div id="supirin-modal" tabindex="-1" class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full">
-            <div class="relative w-full max-w-4xl max-h-full">
+        <div id="supirin-modal" tabindex="-1" class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full overflow-auto">
+            <div class="relative w-full max-w-4xl max-h-full overflow-auto">
                 <!-- Modal content -->
-                <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
+                <div class="relative bg-white rounded-lg shadow dark:bg-gray-700 overflow-auto">
                     <!-- Modal header -->
                     <div class="flex items-center justify-between p-5 border-b rounded-t dark:border-gray-600">
                         <h3 class="text-xl font-medium text-gray-900 dark:text-white">
@@ -1520,4 +1520,9 @@ layout: default
             </div>
         </div>
     </section>
+    <footer class="text-center bg-cv-dark text-white font-normal pb-5">
+        <p class="text-sm border-t border-cv-light-gray pt-5">
+            Created by <a href="" class="text-cv-blue-primary font-semibold">Refi Ahmad Fauzan</a>, with <a href="" class="text-sky-500 font-semibold">Tailwind CSS & Jekyll</a> © 2023
+        </p>
+    </footer>
 </div>

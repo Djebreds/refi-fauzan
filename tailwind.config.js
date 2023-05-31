@@ -23,5 +23,8 @@ module.exports = {
   },
   variants: {},
   plugins: [require('flowbite/plugin')],
-  content: ['./node_modules/flowbite/**/*.js'],
+  content: [
+    './node_modules/flowbite/**/*.js',
+    './index.html',
+  ],
 };
