@@ -2,53 +2,18 @@
 layout: default
 ---
 
-<section id="profile" class="pt-36 bg-cv-dark relative" style="z-index: 0; height: 630px;">
-    <div class="container fixed inset-y-0 left-0 top-20 lg:inset-x-0 lg:bottom-50">
-        <div class="flex flex-col justify-center items-center">
-            <div class="profile_picture mx-auto border-4 border-cv-blue-primary rounded-full">
-                <img src="{{ site.baseurl }}/dist/images/profile_picture.png" class="rounded-full m-5 w-40 lg:w-52" alt="Refi Fauzan">
-            </div>
-            <div class="profile-header font-normal text-white text-center">
-                <div class="profile-title mb-3">
-                    <h1 class="block mt-4 text-3xl md:text-4xl">Refi Ahmad Fauzan</h1>
-                    <h2 class="lg:text-2xl">Junior Ruby on Rails Developer | Freshgraduate</h2>
-                </div>
-                <div class="flex flex-row justify-center z-0">
-                    <a href="#contact" class="text-cv-dark-gray mx-1 bg-white hover:text-white hover:bg-cv-blue-primary hover:shadow-lg transition duration-300 ease-in-out font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center">
-                        <svg fill="currentColor" class="w-6 h-5 mr-2 -ml-1" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                            <path clip-rule="evenodd" fill-rule="evenodd" d="M1.5 4.5a3 3 0 013-3h1.372c.86 0 1.61.586 1.819 1.42l1.105 4.423a1.875 1.875 0 01-.694 1.955l-1.293.97c-.135.101-.164.249-.126.352a11.285 11.285 0 006.697 6.697c.103.038.25.009.352-.126l.97-1.293a1.875 1.875 0 011.955-.694l4.423 1.105c.834.209 1.42.959 1.42 1.82V19.5a3 3 0 01-3 3h-2.25C8.552 22.5 1.5 15.448 1.5 6.75V4.5z"></path>
-                        </svg>
-                        My Contact
-                    </a>
-                    <a href="#" class="text-cv-dark-gray mx-1 bg-white hover:text-white hover:bg-cv-blue-primary hover:shadow-lg transition duration-300 ease-in-out font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center" data-modal-target="cv-modal" data-modal-toggle="cv-modal">
-                        <svg fill="currentColor" class="w-6 h-5 mr-2 -ml-1" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                            <path clip-rule="evenodd" fill-rule="evenodd" d="M5.625 1.5H9a3.75 3.75 0 013.75 3.75v1.875c0 1.036.84 1.875 1.875 1.875H16.5a3.75 3.75 0 013.75 3.75v7.875c0 1.035-.84 1.875-1.875 1.875H5.625a1.875 1.875 0 01-1.875-1.875V3.375c0-1.036.84-1.875 1.875-1.875zm5.845 17.03a.75.75 0 001.06 0l3-3a.75.75 0 10-1.06-1.06l-1.72 1.72V12a.75.75 0 00-1.5 0v4.19l-1.72-1.72a.75.75 0 00-1.06 1.06l3 3z"></path>
-                            <path d="M14.25 5.25a5.23 5.23 0 00-1.279-3.434 9.768 9.768 0 016.963 6.963A5.23 5.23 0 0016.5 7.5h-1.875a.375.375 0 01-.375-.375V5.25z"></path>
-                        </svg>
-                        Download CV
-                    </a>
-                </div>
-            </div>
-            <a href="#about" class="text-white hover:text-cv-blue-primary hover:shadow-lg transition duration-300 ease-in-out">
-                <svg fill="currentColor" class="mx-auto mt-4 mb-2" width="40" height="40" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                    <path clip-rule="evenodd" fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm-.53 14.03a.75.75 0 001.06 0l3-3a.75.75 0 10-1.06-1.06l-1.72 1.72V8.25a.75.75 0 00-1.5 0v5.69l-1.72-1.72a.75.75 0 00-1.06 1.06l3 3z"></path>
-                </svg>
-            </a>
-        </div>
-    </div>
-</section>
-
 <div class="bg-white relative z-2">
+    
     <div id="cv-modal" tabindex="-1" class="fixed inset-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full">
         <div class="relative w-full max-w-4xl max-h-full">
             <!-- Modal content -->
-            <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
+            <div class="relative bg-white rounded-lg shadow">
                 <!-- Modal header -->
-                <div class="flex items-center justify-between p-5 border-b rounded-t dark:border-gray-600">
-                    <h3 class="text-xl font-medium text-gray-900 dark:text-white">
+                <div class="flex items-center justify-between p-5 border-b rounded-t">
+                    <h3 class="text-xl font-medium text-gray-900">
                         CV Preview
                     </h3>
-                    <button type="button" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-600 dark:hover:text-white" data-modal-hide="cv-modal">
+                    <button type="button" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center" data-modal-hide="cv-modal">
                         <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
                         <span class="sr-only">Close modal</span>
                     </button>
@@ -64,13 +29,14 @@ layout: default
                 </div>
                 <!-- Modal footer -->
                 <div class="flex items-center p-6 space-x-2 border-t border-gray-200 rounded-b justify-between">
-                    <a href="{{ site.baseurl }}/dist/images/CV_Refi.pdf" onclick="return confirm('Download CV_Refi.pdf ?')" download class="text-gray-500 bg-white hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-gray-200 rounded-lg border border-gray-200 text-sm font-medium px-5 py-2.5 hover:text-gray-900 focus:z-10">download</a>
+                    <a href="{{ site.baseurl }}/dist/images/CV_Refi.pdf" onclick="return confirm('Download CV Refi Ahmad Fauzan ?')" download class="text-gray-500 bg-white hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-gray-200 rounded-lg border border-gray-200 text-sm font-medium px-5 py-2.5 hover:text-gray-900 focus:z-10">download</a>
                     <button data-modal-hide="cv-modal" type="button" class="text-gray-500 bg-white hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-gray-200 rounded-lg border border-gray-200 text-sm font-medium px-5 py-2.5 hover:text-gray-900 focus:z-10">Close</button>
                 </div>
             </div>
         </div>
     </div>
 
+    <!-- START ABOUT SECTION -->
     <section id="about" class="pt-36 bg-white">
         <div class="container">
             <div class="about-me mb-20">
@@ -79,52 +45,54 @@ layout: default
                     <h1 class="text-cv-dark absolute pr-5 pl-5 lg:pl-12 lg:pr-16 text-3xl md:text-4xl font-medium -translate-x-1/2 bg-white left-0 md:left-10 lg:left-48">About Me</h1>
                 </div>
                         
+                {% for about in site.abouts %}
                 <div class="w-full lg:w-2/3 mx-auto p-6 bg-white border border-gray-200 hover:shadow-lg transition duration-300 ease-in-out rounded-lg shadow-sm">
                     <blockquote class="text-center md:text-left md:text-xl font-normal text-cv-light-gray">
-                        <p>I'm a Vocational High School graduate in Computer Software Engineering, with a focus on Ruby on Rails web development. With 3 months of internship and 4 months of freelance experience, I've delivered high-quality software and solved complex technical problems. I'm passionate about creating innovative web applications and committed to continuous learning.</p>
+                        <p>{{ about.content }}</p>
                     </blockquote>
                 </div>
+                {% endfor %}
             </div>
         </div>
     </section>
+    <!-- END ABOUT SECTION -->
 
+    <!-- START EDUCATION SECTION -->
     <section id="education" class="pt-10 bg-white">
         <div class="container mb-20">
             <div class="inline-flex items-center justify-center w-full mb-12">
                 <hr class="w-full h-2 me-46 focus:my-8 bg-cv-blue-primary border-0">
                 <h1 class="text-cv-dark absolute pr-5 pl-5 lg:pl-12 lg:pr-16 text-3xl md:text-4xl font-medium -translate-x-1/2 bg-white left-0 md:left-10 lg:left-48">Education</h1>
             </div>
-    
             <div class="w-full lg:w-2/3 mx-auto p-6 bg-white border border-gray-200 hover:shadow-lg transition duration-300 ease-in-out rounded-lg shadow-sm">
                 <ol class="relative border-l border-cv-blue-primary">                  
-                    <li class="ml-6">            
-                        <span class="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -left-3 ring-8 ring-white ">
-                            <svg fill="currentColor" class="w-3 h-3 text-cv-blue-primary-dark " viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                                <path d="M11.7 2.805a.75.75 0 01.6 0A60.65 60.65 0 0122.83 8.72a.75.75 0 01-.231 1.337 49.949 49.949 0 00-9.902 3.912l-.003.002-.34.18a.75.75 0 01-.707 0A50.009 50.009 0 007.5 12.174v-.224c0-.131.067-.248.172-.311a54.614 54.614 0 014.653-2.52.75.75 0 00-.65-1.352 56.129 56.129 0 00-4.78 2.589 1.858 1.858 0 00-.859 1.228 49.803 49.803 0 00-4.634-1.527.75.75 0 01-.231-1.337A60.653 60.653 0 0111.7 2.805z"></path>
-                                <path d="M13.06 15.473a48.45 48.45 0 017.666-3.282c.134 1.414.22 2.843.255 4.285a.75.75 0 01-.46.71 47.878 47.878 0 00-8.105 4.342.75.75 0 01-.832 0 47.877 47.877 0 00-8.104-4.342.75.75 0 01-.461-.71c.035-1.442.121-2.87.255-4.286A48.4 48.4 0 016 13.18v1.27a1.5 1.5 0 00-.14 2.508c-.09.38-.222.753-.397 1.11.452.213.901.434 1.346.661a6.729 6.729 0 00.551-1.608 1.5 1.5 0 00.14-2.67v-.645a48.549 48.549 0 013.44 1.668 2.25 2.25 0 002.12 0z"></path>
-                                <path d="M4.462 19.462c.42-.419.753-.89 1-1.394.453.213.902.434 1.347.661a6.743 6.743 0 01-1.286 1.794.75.75 0 11-1.06-1.06z"></path>
-                            </svg>
-                        </span>
-                        <div class="flex flex-col md:flex-row md:justify-between text-cv-dark">
-                            <h3 class="flex items-center mb-1 text-xl lg:text-2xl font-semibold ">SMK Negeri 1 Katapang</h3>
-                            <h3 class="flex items-center mb-1 text-x lg:text-xl font-normal">2020 - 2023</h3>
-                        </div>
-                        <h4 class="flex items-center mb-1 text-x lg:text-xl font-normal text-cv-dark">Badung, Katapang</h4>
-                        <h3 class="flex items-center mb-1 text-x font-normal text-cv-dark">High School Diploma, Computer Software Engineering</h3>
-                        <ul class="w-full space-y-1 mb-4 list-disc list-inside text-base font-normal text-cv-light-gray ">
-                            <li>
-                                Studied software development such as website, desktop, and mobile app development.
-                            </li>
-                            <li>
-                                Studied programming such as algorithm, programming languages, design system, and analysis.
-                            </li>                            
-                        </ul>
-                    </li>
+                    {% for education in site.educations %}
+                        <li class="ml-6">            
+                            <span class="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -left-3 ring-8 ring-white ">
+                                <svg fill="currentColor" class="w-3 h-3 text-cv-blue-primary-dark " viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                    <path d="M11.7 2.805a.75.75 0 01.6 0A60.65 60.65 0 0122.83 8.72a.75.75 0 01-.231 1.337 49.949 49.949 0 00-9.902 3.912l-.003.002-.34.18a.75.75 0 01-.707 0A50.009 50.009 0 007.5 12.174v-.224c0-.131.067-.248.172-.311a54.614 54.614 0 014.653-2.52.75.75 0 00-.65-1.352 56.129 56.129 0 00-4.78 2.589 1.858 1.858 0 00-.859 1.228 49.803 49.803 0 00-4.634-1.527.75.75 0 01-.231-1.337A60.653 60.653 0 0111.7 2.805z"></path>
+                                    <path d="M13.06 15.473a48.45 48.45 0 017.666-3.282c.134 1.414.22 2.843.255 4.285a.75.75 0 01-.46.71 47.878 47.878 0 00-8.105 4.342.75.75 0 01-.832 0 47.877 47.877 0 00-8.104-4.342.75.75 0 01-.461-.71c.035-1.442.121-2.87.255-4.286A48.4 48.4 0 016 13.18v1.27a1.5 1.5 0 00-.14 2.508c-.09.38-.222.753-.397 1.11.452.213.901.434 1.346.661a6.729 6.729 0 00.551-1.608 1.5 1.5 0 00.14-2.67v-.645a48.549 48.549 0 013.44 1.668 2.25 2.25 0 002.12 0z"></path>
+                                    <path d="M4.462 19.462c.42-.419.753-.89 1-1.394.453.213.902.434 1.347.661a6.743 6.743 0 01-1.286 1.794.75.75 0 11-1.06-1.06z"></path>
+                                </svg>
+                            </span>
+                            <div class="flex flex-col md:flex-row md:justify-between text-cv-dark">
+                                <h3 class="flex items-center mb-1 text-xl lg:text-2xl font-semibold ">{{ education.school_name }}</h3>
+                                <h3 class="flex items-center mb-1 text-x lg:text-xl font-normal">{{ education.years }}</h3>
+                            </div>
+                            <h4 class="flex items-center mb-1 text-x lg:text-xl font-normal text-cv-dark">{{ education.location }}</h4>
+                            <h3 class="flex items-center mb-1 text-x font-normal text-cv-dark">{{ education.title }}</h3>
+                            <ul class="w-full space-y-1 mb-4 list-disc list-inside text-base font-normal text-cv-light-gray ">
+                                {{ education.content }}                                
+                            </ul>
+                        </li>
+                    {% endfor %}
                 </ol>
             </div>
         </div>
     </section>
+    <!-- END EDUCATION SECTION -->
 
+    <!-- START CERTIFICATION SECTION -->
     <section id="certification" class="pt-10 bg-white">
         <div class="container mb-20">
             <div class="inline-flex items-center justify-center w-full mb-12">
@@ -134,29 +102,15 @@ layout: default
     
             <div class="w-full lg:w-2/3 mx-auto p-6 bg-white border border-gray-200 hover:shadow-lg transition duration-300 ease-in-out rounded-lg shadow-sm">
                 <dl class="w-full text-gray-900 divide-y divide-gray-200">
-                    <div class="flex flex-row pb-3">
-                        <img src="{{ site.baseurl }}/dist/images/dicoding.png" class="rounded-md mr-3 w-16 h-16" alt="dicoding">
-                        <div class="flex flex-col pb-3">
-                            <dd class="mb-1 text-lg text-cv-dark font-semibold">Basic of DevOps</dd>
-                            <dt class="text-cv-dark text-l">Dicoding Indonesia</dt>
-                            <dd class="text-cv-light-gray text-l">Issued Jan 2023 • Expires Jan 2026</dd>
-                            <dd class="mb-4 text-cv-light-gray text-l">Credential ID RVZKKWM4EZD5</dd>
-                            <a href="https://dicoding.com/certificates/RVZKKWM4EZD5" target="_blank" class="text-cv-light-gray bg-white hover:bg-gray-100 border border-gray-200 focus:ring-4 w-52 focus:outline-none focus:ring-gray-100 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center">
-                                Show credential
-                                <svg fill="currentColor" class="w-6 h-5 ml-2 -mr-1" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                                    <path clip-rule="evenodd" fill-rule="evenodd" d="M12.97 3.97a.75.75 0 011.06 0l7.5 7.5a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 11-1.06-1.06l6.22-6.22H3a.75.75 0 010-1.5h16.19l-6.22-6.22a.75.75 0 010-1.06z"></path>
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
+                    {% for certification in site.certifications %}
                     <div class="flex flex-row py-3">
-                        <img src="{{ site.baseurl }}/dist/images/dicoding.png" class="rounded-md mr-3 w-16 h-16" alt="dicoding">
-                        <div class="flex flex-col pb-3">
-                            <dd class="mb-1 text-lg text-cv-dark font-semibold">Cloud Practitioner Essentials AWS Cloud</dd>
-                            <dt class="text-cv-dark text-l">Dicoding Indonesia</dt>
-                            <dd class="text-cv-light-gray text-l">Issued Dec 2021 • Expires Dec 2024</dd>
-                            <dd class="mb-4 text-cv-light-gray text-l">Credential ID ERZR4DW6WZYV</dd>
-                            <a href="https://dicoding.com/certificates/ERZR4DW6WZYV" target="_blank" class="text-cv-light-gray bg-white hover:bg-gray-100 border border-gray-200 focus:ring-4 w-52 focus:outline-none focus:ring-gray-100 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center">
+                        <img src="{{ site.baseurl }}/{{ certification.organizer_image }}" class="rounded-md mr-3 w-16 h-16" alt="{{ certification.organizer_name }}">
+                        <div class="flex flex-col">
+                            <dd class="mb-1 text-lg text-cv-dark font-semibold">{{ certification.title }}</dd>
+                            <dt class="text-cv-dark text-l">{{ certification.organizer_name }}</dt>
+                            <dd class="text-cv-light-gray text-l">{{ certification.due_date }}</dd>
+                            <dd class="mb-4 text-cv-light-gray text-l">{{ certification.credentials }}</dd>
+                            <a href="{{ certification.credentials_link }}" target="_blank" class="text-cv-light-gray bg-white hover:bg-gray-100 border border-gray-200 focus:ring-4 w-52 focus:outline-none focus:ring-gray-100 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center">
                                 Show credential
                                 <svg fill="currentColor" class="w-6 h-5 ml-2 -mr-1" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
                                     <path clip-rule="evenodd" fill-rule="evenodd" d="M12.97 3.97a.75.75 0 011.06 0l7.5 7.5a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 11-1.06-1.06l6.22-6.22H3a.75.75 0 010-1.5h16.19l-6.22-6.22a.75.75 0 010-1.06z"></path>
@@ -164,11 +118,14 @@ layout: default
                             </a>
                         </div>
                     </div>
+                    {% endfor %}
                 </dl>  
             </div>
         </div>
     </section>
+    <!-- END CERTIFICATION SECTION -->
 
+    <!-- START SKILLS SECTION -->
     <section id="skills" class="pt-10 ">
         <div class="container mb-20 bg-white">
             <div class="inline-flex items-center justify-center w-full mb-12">
@@ -179,744 +136,78 @@ layout: default
             <div class="development mb-12">
                 <h4 class="text-cv-dark text-3xl font-semibold text-center mb-5">Development</h4>
                 <div class="w-full mx-auto grid grid-cols md:grid-cols-3 lg:grid-cols-5 gap-4">
-                    <div class="bg-white border border-gray-200 hover:shadow-lg transition duration-300 ease-in-out rounded-lg shadow-sm cursor-pointer" data-modal-target="html-modal" data-modal-toggle="html-modal">
-                        <div class="text-center m-5">
-                            <img src="{{ site.baseurl }}/dist/images/skill-icon/html.svg" class="w-16 h-16 mx-auto m-3" alt="html">
-                            <h5 class="font-semibold">HTML</h5>
-                            <h6>Advance</h6>
+                    {% for skill in site.skills %}
+                        <div class="bg-white border border-gray-200 hover:shadow-lg transition duration-300 ease-in-out rounded-lg shadow-sm cursor-pointer" data-modal-target="{{ skill.modal_id }}" data-modal-toggle="{{ skill.modal_id }}">
+                            <div class="text-center m-5">
+                                <img src="{{ site.baseurl }}/{{ skill.image }}" class="w-16 h-16 mx-auto m-3" alt="html">
+                                <h5 class="font-semibold text-cv-dark">{{ skill.name }}</h5>
+                                <h6 class="text-cv-light-gray">{{ skill.ability }}</h6>
+                            </div>
                         </div>
-                    </div>
-                    <div class="bg-white border border-gray-200 hover:shadow-lg transition duration-300 ease-in-out rounded-lg shadow-sm cursor-pointer" data-modal-target="css-modal" data-modal-toggle="css-modal">
-                        <div class="text-center m-5">
-                            <img src="{{ site.baseurl }}/dist/images/skill-icon/css.svg" class="w-16 h-16 mx-auto m-3" alt="css">
-                            <h5 class="font-semibold">CSS</h5>
-                            <h6>Intermediate</h6>
-                        </div>
-                    </div>
-                    <div class="bg-white border border-gray-200 hover:shadow-lg transition duration-300 ease-in-out rounded-lg shadow-sm cursor-pointer" data-modal-target="javascript-modal" data-modal-toggle="javascript-modal">
-                        <div class="text-center m-5">
-                            <img src="{{ site.baseurl }}/dist/images/skill-icon/javascript.svg" class="w-16 h-16 mx-auto m-3" alt="javascript">
-                            <h5 class="font-semibold">Javascript</h5>
-                            <h6>Advance</h6>
-                        </div>
-                    </div>
-                    <div class="bg-white border border-gray-200 hover:shadow-lg transition duration-300 ease-in-out rounded-lg shadow-sm cursor-pointer" data-modal-target="ruby-modal" data-modal-toggle="ruby-modal">
-                        <div class="text-center m-5">
-                            <img src="{{ site.baseurl }}/dist/images/skill-icon/ruby.svg" class="w-16 h-16 mx-auto m-3" alt="ruby">
-                            <h5 class="font-semibold">Ruby</h5>
-                            <h6>Advance</h6>
-                        </div>
-                    </div>
-                    <div class="bg-white border border-gray-200 hover:shadow-lg transition duration-300 ease-in-out rounded-lg shadow-sm cursor-pointer" data-modal-target="php-modal" data-modal-toggle="php-modal">
-                        <div class="text-center m-5">
-                            <img src="{{ site.baseurl }}/dist/images/skill-icon/php.svg" class="w-16 h-16 mx-auto m-3" alt="php">
-                            <h5 class="font-semibold">PHP</h5>
-                            <h6>Advance</h6>
-                        </div>
-                    </div>
-                    <div class="bg-white border border-gray-200 hover:shadow-lg transition duration-300 ease-in-out rounded-lg shadow-sm cursor-pointer" data-modal-target="mysql-modal" data-modal-toggle="mysql-modal">
-                        <div class="text-center m-5">
-                            <img src="{{ site.baseurl }}/dist/images/skill-icon/mysql.svg" class="w-16 h-16 mx-auto m-3" alt="mysql">
-                            <h5 class="font-semibold">MySQL</h5>
-                            <h6>Advance</h6>
-                        </div>
-                    </div>
-                    <div class="bg-white border border-gray-200 hover:shadow-lg transition duration-300 ease-in-out rounded-lg shadow-sm cursor-pointer" data-modal-target="postgresql-modal" data-modal-toggle="postgresql-modal">
-                        <div class="text-center m-5">
-                            <img src="{{ site.baseurl }}/dist/images/skill-icon/postgresql.svg" class="w-16 h-16 mx-auto m-3" alt="postgresql">
-                            <h5 class="font-semibold">PostgreSQL</h5>
-                            <h6>Intermediate</h6>
-                        </div>
-                    </div>
-                    <div class="bg-white border border-gray-200 hover:shadow-lg transition duration-300 ease-in-out rounded-lg shadow-sm cursor-pointer" data-modal-target="rails-modal" data-modal-toggle="rails-modal">
-                        <div class="text-center m-5">
-                            <img src="{{ site.baseurl }}/dist/images/skill-icon/rails.svg" class="w-16 h-16 mx-auto m-3" alt="rails">
-                            <h5 class="font-semibold">Ruby on Rails</h5>
-                            <h6>Advance</h6>
-                        </div>
-                    </div>
-                    <div class="bg-white border border-gray-200 hover:shadow-lg transition duration-300 ease-in-out rounded-lg shadow-sm cursor-pointer" data-modal-target="rspec-modal" data-modal-toggle="rspec-modal">
-                        <div class="text-center m-5">
-                            <img src="{{ site.baseurl }}/dist/images/skill-icon/respec.svg" class="w-16 h-16 mx-auto m-3" alt="rspec">
-                            <h5 class="font-semibold">RSpec</h5>
-                            <h6>Intermediate</h6>
-                        </div>
-                    </div>
-                    <div class="bg-white border border-gray-200 hover:shadow-lg transition duration-300 ease-in-out rounded-lg shadow-sm cursor-pointer" data-modal-target="laravel-modal" data-modal-toggle="laravel-modal">
-                        <div class="text-center m-5">
-                            <img src="{{ site.baseurl }}/dist/images/skill-icon/laravel.svg" class="w-16 h-16 mx-auto m-3" alt="laravel">
-                            <h5 class="font-semibold">Laravel</h5>
-                            <h6>Advance</h6>
-                        </div>
-                    </div>
-                    <div class="bg-white border border-gray-200 hover:shadow-lg transition duration-300 ease-in-out rounded-lg shadow-sm cursor-pointer" data-modal-target="react-modal" data-modal-toggle="react-modal">
-                        <div class="text-center m-5">
-                            <img src="{{ site.baseurl }}/dist/images/skill-icon/react.svg" class="w-16 h-16 mx-auto m-3" alt="vue">
-                            <h5 class="font-semibold">React.js</h5>
-                            <h6>Beginner</h6>
-                        </div>
-                    </div>
-                    <div class="bg-white border border-gray-200 hover:shadow-lg transition duration-300 ease-in-out rounded-lg shadow-sm cursor-pointer" data-modal-target="flutter-modal" data-modal-toggle="flutter-modal">
-                        <div class="text-center m-5">
-                            <img src="{{ site.baseurl }}/dist/images/skill-icon/flutter.svg" class="w-16 h-16 mx-auto m-3" alt="flutter">
-                            <h5 class="font-semibold">Flutter</h5>
-                            <h6>Beginner</h6>
-                        </div>
-                    </div>
-                    <div class="bg-white border border-gray-200 hover:shadow-lg transition duration-300 ease-in-out rounded-lg shadow-sm cursor-pointer" data-modal-target="api-modal" data-modal-toggle="api-modal">
-                        <div class="text-center m-5">
-                            <img src="{{ site.baseurl }}/dist/images/skill-icon/postman.svg" class="w-16 h-16 mx-auto m-3" alt="api">
-                            <h5 class="font-semibold">REST API</h5>
-                            <h6>Intermediate</h6>
-                        </div>
-                    </div>
-                    <div class="bg-white border border-gray-200 hover:shadow-lg transition duration-300 ease-in-out rounded-lg shadow-sm cursor-pointer" data-modal-target="jquery-modal" data-modal-toggle="jquery-modal">
-                        <div class="text-center m-5">
-                            <img src="{{ site.baseurl }}/dist/images/skill-icon/jquery.svg" class="w-16 h-16 mx-auto m-3" alt="jquery">
-                            <h5 class="font-semibold">JQuery & AJAX</h5>
-                            <h6>Intermediate</h6>
-                        </div>
-                    </div>
-                    <div class="bg-white border border-gray-200 hover:shadow-lg transition duration-300 ease-in-out rounded-lg shadow-sm cursor-pointer" data-modal-target="git-modal" data-modal-toggle="git-modal">
-                        <div class="text-center m-5">
-                            <img src="{{ site.baseurl }}/dist/images/skill-icon/git.svg" class="w-16 h-16 mx-auto m-3" alt="git">
-                            <h5 class="font-semibold">GIT</h5>
-                            <h6>Intermediate</h6>
-                        </div>
-                    </div>
-                    <div class="bg-white border border-gray-200 hover:shadow-lg transition duration-300 ease-in-out rounded-lg shadow-sm cursor-pointer" data-modal-target="bootstrap-modal" data-modal-toggle="bootstrap-modal">
-                        <div class="text-center m-5">
-                            <img src="{{ site.baseurl }}/dist/images/skill-icon/bootstrap.svg" class="w-16 h-16 mx-auto m-3" alt="bootstrap">
-                            <h5 class="font-semibold">Bootstrap</h5>
-                            <h6>Intermediate</h6>
-                        </div>
-                    </div>
+                    {% endfor %}
                 </div>
             </div>
     
             <div class="languages mt-12">
                 <h4 class="text-cv-dark text-3xl font-semibold text-center mb-5">Languages</h4>
                 <div class="w-full lg:w-2/3 mx-auto grid grid-cols-1 md:grid-cols-3 gap-4">
-                    <div class="bg-white border border-gray-200 hover:shadow-lg transition duration-300 ease-in-out rounded-lg shadow-sm">
-                        <div class="text-center m-5">
-                            <img src="{{ site.baseurl }}/dist/images/skill-icon/indonesia.svg" class="w-16 h-16 mx-auto m-3" alt="indonesia">
-                            <h5 class="font-semibold">Indonesian</h5>
-                            <h6>Native or bilingual proficiency</h6>
+                    {% for language in site.languages %}
+                        <div class="bg-white border border-gray-200 hover:shadow-lg transition duration-300 ease-in-out rounded-lg shadow-sm">
+                            <div class="text-center m-5">
+                                <img src="{{ site.baseurl }}/{{ language.image }}" class="w-16 h-16 mx-auto m-3" alt="{{ language.name }}">
+                                <h5 class="font-semibold text-cv-dark">{{ language.name }}</h5>
+                                <h6 class="text-cv-light-gray">{{ language.ability }}</h6>
+                            </div>
                         </div>
-                    </div>
-                    <div class="bg-white border border-gray-200 hover:shadow-lg transition duration-300 ease-in-out rounded-lg shadow-sm">
-                        <div class="text-center m-5">
-                            <img src="{{ site.baseurl }}/dist/images/skill-icon/indonesia.svg" class="w-16 h-16 mx-auto m-3" alt="indonesia">
-                            <h5 class="font-semibold">Sundanese</h5>
-                            <h6>Native or bilingual proficiency</h6>
-                        </div>
-                    </div>
-                    <div class="bg-white border border-gray-200 hover:shadow-lg transition duration-300 ease-in-out rounded-lg shadow-sm">
-                        <div class="text-center m-5">
-                            <img src="{{ site.baseurl }}/dist/images/skill-icon/united-kingdom.svg" class="w-16 h-16 mx-auto m-3" alt="united-kingdom">
-                            <h5 class="font-semibold">English</h5>
-                            <h6>Limited working proficiency</h6>
-                        </div>
-                    </div>
+                    {% endfor %}
                 </div>
             </div>
-
         </div>
-        <div class="modals">
-            <div id="ruby-modal" tabindex="-1" class="fixed inset-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full">
-                <div class="relative w-full max-w-md max-h-full">
-                    <!-- Modal content -->
-                    <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
-                        <!-- Modal header -->
-                        <div class="flex items-center justify-between p-5 border-b rounded-t dark:border-gray-600">
-                            <h3 class="text-xl font-medium text-gray-900 dark:text-white">
-                                Ruby
-                            </h3>
-                            <button type="button" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-600 dark:hover:text-white" data-modal-hide="ruby-modal">
-                                <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
-                                <span class="sr-only">Close modal</span>
-                            </button>
-                        </div>
-                        <!-- Modal body -->
-                        <div class="p-6 space-y-6">
-                            <div class="flex flex-row">
-                                <img src="{{ site.baseurl }}/dist/images/skill-icon/ruby.svg" class="w-16 h-16 m-3" alt="Ruby">
-                                <div class="text-sm mt-3">
-                                    <h5 class="font-semibold text-xl">Ruby</h5>
-                                    <h6 class="text-cv-light-gray">Other tools or library :</h6>
-                                    <h5>Visual Studio Code, Ruby Mine</h5>
-                                </div>
+
+        <div class="modals"> 
+            {% for skill in site.skills %}
+                <div id="{{ skill.modal_id }}" tabindex="-1" class="fixed inset-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full">
+                    <div class="relative w-full max-w-md max-h-full">
+                        <!-- Modal content -->
+                        <div class="relative bg-white rounded-lg shadow">
+                            <!-- Modal header -->
+                            <div class="flex items-center justify-between p-5 border-b rounded-t">
+                                <h3 class="text-xl font-medium text-cv-dark">
+                                    {{ skill.name }}
+                                </h3>
+                                <button type="button" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center" data-modal-hide="{{ skill.modal_id }}">
+                                    <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                                    <span class="sr-only">Close modal</span>
+                                </button>
                             </div>
-                            <hr class="h-px my-8 bg-gray-200 border-0">
-                            <p class="text-base leading-relaxed text-gray-500">
-                                I usually use Ruby for build and debugging the Rails project.
-                            </p>
-                        </div>
-                        <!-- Modal footer -->
-                        <div class="flex items-center p-6 space-x-2 border-t border-gray-200 rounded-b">
-                            <button data-modal-hide="ruby-modal" type="button" class="text-gray-500 bg-white ml-auto hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-gray-200 rounded-lg border border-gray-200 text-sm font-medium px-5 py-2.5 hover:text-gray-900 focus:z-10">Close</button>
+                            <!-- Modal body -->
+                            <div class="p-6 space-y-6">
+                                <div class="flex flex-row">
+                                    <img src="{{ site.baseurl }}/{{ skill.image }}" class="w-16 h-16 m-3" alt="{{ skill.name }}">
+                                    <div class="text-sm mt-3">
+                                        <h5 class="font-semibold text-xl text-cv-dark">{{ skill.name }}</h5>
+                                        <h6 class="text-cv-light-gray">Other tools or library :</h6>
+                                        <h5 class="text-cv-dark">{{ skill.other_tools }}</h5>
+                                    </div>
+                                </div>
+                                <hr class="h-px my-8 bg-gray-200 border-0">
+                                <p class="text-base leading-relaxed text-gray-500">
+                                    {{ skill.description }}
+                                </p>
+                            </div>
+                            <!-- Modal footer -->
+                            <div class="flex items-center p-6 space-x-2 border-t border-gray-200 rounded-b">
+                                <button data-modal-hide="{{ skill.modal_id }}" type="button" class="text-gray-500 bg-white ml-auto hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-gray-200 rounded-lg border border-gray-200 text-sm font-medium px-5 py-2.5 hover:text-gray-900 focus:z-10">Close</button>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-    
-            <div id="rails-modal" tabindex="-1" class="fixed inset-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full">
-                <div class="relative w-full max-w-md max-h-full">
-                    <!-- Modal content -->
-                    <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
-                        <!-- Modal header -->
-                        <div class="flex items-center justify-between p-5 border-b rounded-t dark:border-gray-600">
-                            <h3 class="text-xl font-medium text-gray-900 dark:text-white">
-                                Ruby on Rails
-                            </h3>
-                            <button type="button" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center" data-modal-hide="rails-modal">
-                                <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
-                                <span class="sr-only">Close modal</span>
-                            </button>
-                        </div>
-                        <!-- Modal body -->
-                        <div class="p-6 space-y-6">
-                            <div class="flex flex-row">
-                                <img src="{{ site.baseurl }}/dist/images/skill-icon/rails.svg" class="w-16 h-16 m-3" alt="Rails">
-                                <div class="text-sm mt-3">
-                                    <h5 class="font-semibold text-xl">Ruby on Rails</h5>
-                                    <h6 class="text-cv-light-gray">Other tools or library :</h6>
-                                    <h5>Visual Studio Code, PostgreSQL, MySQL, Sidekiq, RSpec, etc.</h5>
-                                </div>
-                            </div>
-                            <hr class="h-px my-8 bg-gray-200 border-0">
-                            <p class="text-base leading-relaxed text-gray-500">
-                                I usually use Ruby on Rails for the main project.
-                            </p>
-                        </div>
-                        <!-- Modal footer -->
-                        <div class="flex items-center p-6 space-x-2 border-t border-gray-200 rounded-b">
-                            <button data-modal-hide="rails-modal" type="button" class="text-gray-500 bg-white ml-auto hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-gray-200 rounded-lg border border-gray-200 text-sm font-medium px-5 py-2.5 hover:text-gray-900 focus:z-10">Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-    
-            <div id="php-modal" tabindex="-1" class="fixed inset-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full">
-                <div class="relative w-full max-w-md max-h-full">
-                    <!-- Modal content -->
-                    <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
-                        <!-- Modal header -->
-                        <div class="flex items-center justify-between p-5 border-b rounded-t dark:border-gray-600">
-                            <h3 class="text-xl font-medium text-gray-900 dark:text-white">
-                                PHP
-                            </h3>
-                            <button type="button" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center" data-modal-hide="php-modal">
-                                <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
-                                <span class="sr-only">Close modal</span>
-                            </button>
-                        </div>
-                        <!-- Modal body -->
-                        <div class="p-6 space-y-6">
-                            <div class="flex flex-row">
-                                <img src="{{ site.baseurl }}/dist/images/skill-icon/php.svg" class="w-16 h-16 m-3" alt="PHP">
-                                <div class="text-sm mt-3">
-                                    <h5 class="font-semibold text-xl">PHP</h5>
-                                    <h6 class="text-cv-light-gray">Other tools or library :</h6>
-                                    <h5>Visual Studio Code, XAMPP, MYSQL, Javascript, etc.</h5>
-                                </div>
-                            </div>
-                            <hr class="h-px my-8 bg-gray-200 border-0">
-                            <p class="text-base leading-relaxed text-gray-500">
-                                I usually use PHP for side projects or projects which not scalable.
-                            </p>
-                        </div>
-                        <!-- Modal footer -->
-                        <div class="flex items-center p-6 space-x-2 border-t border-gray-200 rounded-b">
-                            <button data-modal-hide="php-modal" type="button" class="text-gray-500 bg-white ml-auto hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-gray-200 rounded-lg border border-gray-200 text-sm font-medium px-5 py-2.5 hover:text-gray-900 focus:z-10">Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <div id="laravel-modal" tabindex="-1" class="fixed inset-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full">
-                <div class="relative w-full max-w-md max-h-full">
-                    <!-- Modal content -->
-                    <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
-                        <!-- Modal header -->
-                        <div class="flex items-center justify-between p-5 border-b rounded-t dark:border-gray-600">
-                            <h3 class="text-xl font-medium text-gray-900 dark:text-white">
-                                Laravel
-                            </h3>
-                            <button type="button" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center" data-modal-hide="laravel-modal">
-                                <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
-                                <span class="sr-only">Close modal</span>
-                            </button>
-                        </div>
-                        <!-- Modal body -->
-                        <div class="p-6 space-y-6">
-                            <div class="flex flex-row">
-                                <img src="{{ site.baseurl }}/dist/images/skill-icon/laravel.svg" class="w-16 h-16 m-3" alt="laravel">
-                                <div class="text-sm mt-3">
-                                    <h5 class="font-semibold text-xl">Laravel</h5>
-                                    <h6 class="text-cv-light-gray">Other tools or library :</h6>
-                                    <h5>Visual Studio Code, Livewire, MySQL, Jetstream, etc.</h5>
-                                </div>
-                            </div>
-                            <hr class="h-px my-8 bg-gray-200 border-0">
-                            <p class="text-base leading-relaxed text-gray-500">
-                                I usually use Laravel for side projects.
-                            </p>
-                        </div>
-                        <!-- Modal footer -->
-                        <div class="flex items-center p-6 space-x-2 border-t border-gray-200 rounded-b">
-                            <button data-modal-hide="laravel-modal" type="button" class="text-gray-500 bg-white ml-auto hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-gray-200 rounded-lg border border-gray-200 text-sm font-medium px-5 py-2.5 hover:text-gray-900 focus:z-10">Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-    
-            <div id="mysql-modal" tabindex="-1" class="fixed inset-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full">
-                <div class="relative w-full max-w-md max-h-full">
-                    <!-- Modal content -->
-                    <div class="relative bg-white rounded-lg shadow">
-                        <!-- Modal header -->
-                        <div class="flex items-center justify-between p-5 border-b rounded-t">
-                            <h3 class="text-xl font-medium text-gray-900 dark:text-white">
-                                MySQL
-                            </h3>
-                            <button type="button" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center" data-modal-hide="mysql-modal">
-                                <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
-                                <span class="sr-only">Close modal</span>
-                            </button>
-                        </div>
-                        <!-- Modal body -->
-                        <div class="p-6 space-y-6">
-                            <div class="flex flex-row">
-                                <img src="{{ site.baseurl }}/dist/images/skill-icon/mysql.svg" class="w-16 h-16 m-3" alt="MySQL">
-                                <div class="text-sm mt-3">
-                                    <h5 class="font-semibold text-xl">MySQL</h5>
-                                    <h6 class="text-cv-light-gray">Other tools or library :</h6>
-                                    <h5>Visual Studio Code, Livewire, MYSQL, Jetstream, etc.</h5>
-                                </div>
-                            </div>
-                            <hr class="h-px my-8 bg-gray-200 border-0">
-                            <p class="text-base leading-relaxed text-gray-500">
-                                I usually use MySQL for Laravel or PHP projects but also I can integrate it with Rails
-                            </p>
-                        </div>
-                        <!-- Modal footer -->
-                        <div class="flex items-center p-6 space-x-2 border-t border-gray-200 rounded-b">
-                            <button data-modal-hide="mysql-modal" type="button" class="text-gray-500 bg-white ml-auto hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-gray-200 rounded-lg border border-gray-200 text-sm font-medium px-5 py-2.5 hover:text-gray-900 focus:z-10">Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-    
-            <div id="postgresql-modal" tabindex="-1" class="fixed inset-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full">
-                <div class="relative w-full max-w-md max-h-full">
-                    <!-- Modal content -->
-                    <div class="relative bg-white rounded-lg shadow">
-                        <!-- Modal header -->
-                        <div class="flex items-center justify-between p-5 border-b rounded-t">
-                            <h3 class="text-xl font-medium text-gray-900 dark:text-white">
-                                PostgreSQL
-                            </h3>
-                            <button type="button" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center" data-modal-hide="postgresql-modal">
-                                <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
-                                <span class="sr-only">Close modal</span>
-                            </button>
-                        </div>
-                        <!-- Modal body -->
-                        <div class="p-6 space-y-6">
-                            <div class="flex flex-row">
-                                <img src="{{ site.baseurl }}/dist/images/skill-icon/postgresql.svg" class="w-16 h-16 m-3" alt="postgresql">
-                                <div class="text-sm mt-3">
-                                    <h5 class="font-semibold text-xl">PostgreSQL</h5>
-                                    <h6 class="text-cv-light-gray">Other tools or library :</h6>
-                                    <h5>Visual Studio Code, Ruby on Rails.</h5>
-                                </div>
-                            </div>
-                            <hr class="h-px my-8 bg-gray-200 border-0">
-                            <p class="text-base leading-relaxed text-gray-500">
-                                I usually use PostgreSQL for Rails project.
-                            </p>
-                        </div>
-                        <!-- Modal footer -->
-                        <div class="flex items-center p-6 space-x-2 border-t border-gray-200 rounded-b">
-                            <button data-modal-hide="postgresql-modal" type="button" class="text-gray-500 bg-white ml-auto hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-gray-200 rounded-lg border border-gray-200 text-sm font-medium px-5 py-2.5 hover:text-gray-900 focus:z-10">Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-    
-            <div id="html-modal" tabindex="-1" class="fixed inset-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full">
-                <div class="relative w-full max-w-md max-h-full">
-                    <!-- Modal content -->
-                    <div class="relative bg-white rounded-lg shadow">
-                        <!-- Modal header -->
-                        <div class="flex items-center justify-between p-5 border-b rounded-t">
-                            <h3 class="text-xl font-medium text-gray-900 dark:text-white">
-                                HTML
-                            </h3>
-                            <button type="button" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center" data-modal-hide="html-modal">
-                                <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
-                                <span class="sr-only">Close modal</span>
-                            </button>
-                        </div>
-                        <!-- Modal body -->
-                        <div class="p-6 space-y-6">
-                            <div class="flex flex-row">
-                                <img src="{{ site.baseurl }}/dist/images/skill-icon/html.svg" class="w-16 h-16 m-3" alt="html">
-                                <div class="text-sm mt-3">
-                                    <h5 class="font-semibold text-xl">HTML</h5>
-                                    <h6 class="text-cv-light-gray">Other tools or library :</h6>
-                                    <h5>Visual Studio Code, Javascript, CSS, etc.</h5>
-                                </div>
-                            </div>
-                            <hr class="h-px my-8 bg-gray-200 border-0">
-                            <p class="text-base leading-relaxed text-gray-500">
-                                I usually use HTML for every web projects.
-                            </p>
-                        </div>
-                        <!-- Modal footer -->
-                        <div class="flex items-center p-6 space-x-2 border-t border-gray-200 rounded-b">
-                            <button data-modal-hide="html-modal" type="button" class="text-gray-500 bg-white ml-auto hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-gray-200 rounded-lg border border-gray-200 text-sm font-medium px-5 py-2.5 hover:text-gray-900 focus:z-10">Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-    
-            <div id="css-modal" tabindex="-1" class="fixed inset-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full">
-                <div class="relative w-full max-w-md max-h-full">
-                    <!-- Modal content -->
-                    <div class="relative bg-white rounded-lg shadow">
-                        <!-- Modal header -->
-                        <div class="flex items-center justify-between p-5 border-b rounded-t">
-                            <h3 class="text-xl font-medium text-gray-900 dark:text-white">
-                                CSS
-                            </h3>
-                            <button type="button" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center" data-modal-hide="css-modal">
-                                <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
-                                <span class="sr-only">Close modal</span>
-                            </button>
-                        </div>
-                        <!-- Modal body -->
-                        <div class="p-6 space-y-6">
-                            <div class="flex flex-row">
-                                <img src="{{ site.baseurl }}/dist/images/skill-icon/css.svg" class="w-16 h-16 m-3" alt="css">
-                                <div class="text-sm mt-3">
-                                    <h5 class="font-semibold text-xl">CSS</h5>
-                                    <h6 class="text-cv-light-gray">Other tools or library :</h6>
-                                    <h5>Visual Studio Code, HTML, Bootstrap, etc.</h5>
-                                </div>
-                            </div>
-                            <hr class="h-px my-8 bg-gray-200 border-0">
-                            <p class="text-base leading-relaxed text-gray-500">
-                                I usually use CSS for every web projects.
-                            </p>
-                        </div>
-                        <!-- Modal footer -->
-                        <div class="flex items-center p-6 space-x-2 border-t border-gray-200 rounded-b">
-                            <button data-modal-hide="css-modal" type="button" class="text-gray-500 bg-white ml-auto hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-gray-200 rounded-lg border border-gray-200 text-sm font-medium px-5 py-2.5 hover:text-gray-900 focus:z-10">Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-    
-            <div id="javascript-modal" tabindex="-1" class="fixed inset-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full">
-                <div class="relative w-full max-w-md max-h-full">
-                    <!-- Modal content -->
-                    <div class="relative bg-white rounded-lg shadow">
-                        <!-- Modal header -->
-                        <div class="flex items-center justify-between p-5 border-b rounded-t">
-                            <h3 class="text-xl font-medium text-gray-900 dark:text-white">
-                                Javascript
-                            </h3>
-                            <button type="button" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center" data-modal-hide="javascript-modal">
-                                <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
-                                <span class="sr-only">Close modal</span>
-                            </button>
-                        </div>
-                        <!-- Modal body -->
-                        <div class="p-6 space-y-6">
-                            <div class="flex flex-row">
-                                <img src="{{ site.baseurl }}/dist/images/skill-icon/javascript.svg" class="w-16 h-16 m-3" alt="javascript">
-                                <div class="text-sm mt-3">
-                                    <h5 class="font-semibold text-xl">Javascript</h5>
-                                    <h6 class="text-cv-light-gray">Other tools or library :</h6>
-                                    <h5>Visual Studio Code, AJAX, Jquery, etc.</h5>
-                                </div>
-                            </div>
-                            <hr class="h-px my-8 bg-gray-200 border-0">
-                            <p class="text-base leading-relaxed text-gray-500">
-                                I usually use Javascript for every web projects.
-                            </p>
-                        </div>
-                        <!-- Modal footer -->
-                        <div class="flex items-center p-6 space-x-2 border-t border-gray-200 rounded-b">
-                            <button data-modal-hide="javascript-modal" type="button" class="text-gray-500 bg-white ml-auto hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-gray-200 rounded-lg border border-gray-200 text-sm font-medium px-5 py-2.5 hover:text-gray-900 focus:z-10">Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-    
-            <div id="react-modal" tabindex="-1" class="fixed inset-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full">
-                <div class="relative w-full max-w-md max-h-full">
-                    <!-- Modal content -->
-                    <div class="relative bg-white rounded-lg shadow">
-                        <!-- Modal header -->
-                        <div class="flex items-center justify-between p-5 border-b rounded-t">
-                            <h3 class="text-xl font-medium text-gray-900 dark:text-white">
-                                React.js
-                            </h3>
-                            <button type="button" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center" data-modal-hide="react-modal">
-                                <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
-                                <span class="sr-only">Close modal</span>
-                            </button>
-                        </div>
-                        <!-- Modal body -->
-                        <div class="p-6 space-y-6">
-                            <div class="flex flex-row">
-                                <img src="{{ site.baseurl }}/dist/images/skill-icon/react.svg" class="w-16 h-16 m-3" alt="react">
-                                <div class="text-sm mt-3">
-                                    <h5 class="font-semibold text-xl">React.js</h5>
-                                    <h6 class="text-cv-light-gray">Other tools or library :</h6>
-                                    <h5>Visual Studio Code, Rails, Tailwind, etc.</h5>
-                                </div>
-                            </div>
-                            <hr class="h-px my-8 bg-gray-200 border-0">
-                            <p class="text-base leading-relaxed text-gray-500">
-                                Currently I learning React to improve my front-end knowledge
-                            </p>
-                        </div>
-                        <!-- Modal footer -->
-                        <div class="flex items-center p-6 space-x-2 border-t border-gray-200 rounded-b">
-                            <button data-modal-hide="react-modal" type="button" class="text-gray-500 bg-white ml-auto hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-gray-200 rounded-lg border border-gray-200 text-sm font-medium px-5 py-2.5 hover:text-gray-900 focus:z-10">Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-    
-            <div id="flutter-modal" tabindex="-1" class="fixed inset-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full">
-                <div class="relative w-full max-w-md max-h-full">
-                    <!-- Modal content -->
-                    <div class="relative bg-white rounded-lg shadow">
-                        <!-- Modal header -->
-                        <div class="flex items-center justify-between p-5 border-b rounded-t">
-                            <h3 class="text-xl font-medium text-gray-900 dark:text-white">
-                                Flutter
-                            </h3>
-                            <button type="button" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center" data-modal-hide="flutter-modal">
-                                <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
-                                <span class="sr-only">Close modal</span>
-                            </button>
-                        </div>
-                        <!-- Modal body -->
-                        <div class="p-6 space-y-6">
-                            <div class="flex flex-row">
-                                <img src="{{ site.baseurl }}/dist/images/skill-icon/flutter.svg" class="w-16 h-16 m-3" alt="flutter">
-                                <div class="text-sm mt-3">
-                                    <h5 class="font-semibold text-xl">Flutter</h5>
-                                    <h6 class="text-cv-light-gray">Other tools or library :</h6>
-                                    <h5>Android Studio, Xcode, dart, etc.</h5>
-                                </div>
-                            </div>
-                            <hr class="h-px my-8 bg-gray-200 border-0">
-                            <p class="text-base leading-relaxed text-gray-500">
-                                I usually use flutter when develop mobile projects.
-                            </p>
-                        </div>
-                        <!-- Modal footer -->
-                        <div class="flex items-center p-6 space-x-2 border-t border-gray-200 rounded-b">
-                            <button data-modal-hide="flutter-modal" type="button" class="text-gray-500 bg-white ml-auto hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-gray-200 rounded-lg border border-gray-200 text-sm font-medium px-5 py-2.5 hover:text-gray-900 focus:z-10">Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-    
-            <div id="rspec-modal" tabindex="-1" class="fixed inset-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full">
-                <div class="relative w-full max-w-md max-h-full">
-                    <!-- Modal content -->
-                    <div class="relative bg-white rounded-lg shadow">
-                        <!-- Modal header -->
-                        <div class="flex items-center justify-between p-5 border-b rounded-t">
-                            <h3 class="text-xl font-medium text-gray-900 dark:text-white">
-                                RSpec/TDD
-                            </h3>
-                            <button type="button" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center" data-modal-hide="rspec-modal">
-                                <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
-                                <span class="sr-only">Close modal</span>
-                            </button>
-                        </div>
-                        <!-- Modal body -->
-                        <div class="p-6 space-y-6">
-                            <div class="flex flex-row">
-                                <img src="{{ site.baseurl }}/dist/images/skill-icon/respec.svg" class="w-16 h-16 m-3" alt="rspec">
-                                <div class="text-sm mt-3">
-                                    <h5 class="font-semibold text-xl">RSpec/TDD</h5>
-                                    <h6 class="text-cv-light-gray">Other tools or library :</h6>
-                                    <h5>Visual Studio Code, Ruby, Ruby on Rails, etc.</h5>
-                                </div>
-                            </div>
-                            <hr class="h-px my-8 bg-gray-200 border-0">
-                            <p class="text-base leading-relaxed text-gray-500">
-                                Currently I learn RSpec for testing the program.
-                            </p>
-                        </div>
-                        <!-- Modal footer -->
-                        <div class="flex items-center p-6 space-x-2 border-t border-gray-200 rounded-b">
-                            <button data-modal-hide="rspec-modal" type="button" class="text-gray-500 bg-white ml-auto hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-gray-200 rounded-lg border border-gray-200 text-sm font-medium px-5 py-2.5 hover:text-gray-900 focus:z-10">Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-    
-            <div id="api-modal" tabindex="-1" class="fixed inset-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full">
-                <div class="relative w-full max-w-md max-h-full">
-                    <!-- Modal content -->
-                    <div class="relative bg-white rounded-lg shadow">
-                        <!-- Modal header -->
-                        <div class="flex items-center justify-between p-5 border-b rounded-t">
-                            <h3 class="text-xl font-medium text-gray-900 dark:text-white">
-                                REST API
-                            </h3>
-                            <button type="button" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center" data-modal-hide="api-modal">
-                                <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
-                                <span class="sr-only">Close modal</span>
-                            </button>
-                        </div>
-                        <!-- Modal body -->
-                        <div class="p-6 space-y-6">
-                            <div class="flex flex-row">
-                                <img src="{{ site.baseurl }}/dist/images/skill-icon/postman.svg" class="w-16 h-16 m-3" alt="api">
-                                <div class="text-sm mt-3">
-                                    <h5 class="font-semibold text-xl">REST API</h5>
-                                    <h6 class="text-cv-light-gray">Other tools or library :</h6>
-                                    <h5>Postman, JSON.</h5>
-                                </div>
-                            </div>
-                            <hr class="h-px my-8 bg-gray-200 border-0">
-                            <p class="text-base leading-relaxed text-gray-500">
-                                I Usually use REST API for building web services.
-                            </p>
-                        </div>
-                        <!-- Modal footer -->
-                        <div class="flex items-center p-6 space-x-2 border-t border-gray-200 rounded-b">
-                            <button data-modal-hide="api-modal" type="button" class="text-gray-500 bg-white ml-auto hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-gray-200 rounded-lg border border-gray-200 text-sm font-medium px-5 py-2.5 hover:text-gray-900 focus:z-10">Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-    
-            <div id="jquery-modal" tabindex="-1" class="fixed inset-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full">
-                <div class="relative w-full max-w-md max-h-full">
-                    <!-- Modal content -->
-                    <div class="relative bg-white rounded-lg shadow">
-                        <!-- Modal header -->
-                        <div class="flex items-center justify-between p-5 border-b rounded-t">
-                            <h3 class="text-xl font-medium text-gray-900 dark:text-white">
-                                Jquery & AJAX
-                            </h3>
-                            <button type="button" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center" data-modal-hide="jquery-modal">
-                                <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
-                                <span class="sr-only">Close modal</span>
-                            </button>
-                        </div>
-                        <!-- Modal body -->
-                        <div class="p-6 space-y-6">
-                            <div class="flex flex-row">
-                                <img src="{{ site.baseurl }}/dist/images/skill-icon/jquery.svg" class="w-16 h-16 m-3" alt="jquery">
-                                <div class="text-sm mt-3">
-                                    <h5 class="font-semibold text-xl">Jquery & AJAX</h5>
-                                    <h6 class="text-cv-light-gray">Other tools or library :</h6>
-                                    <h5>Visual Studio Code, Javascript, React.js, etc.</h5>
-                                </div>
-                            </div>
-                            <hr class="h-px my-8 bg-gray-200 border-0">
-                            <p class="text-base leading-relaxed text-gray-500">
-                                I Usually use AJAX for retrieve data from a server asynchronously.
-                            </p>
-                        </div>
-                        <!-- Modal footer -->
-                        <div class="flex items-center p-6 space-x-2 border-t border-gray-200 rounded-b">
-                            <button data-modal-hide="jquery-modal" type="button" class="text-gray-500 bg-white ml-auto hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-gray-200 rounded-lg border border-gray-200 text-sm font-medium px-5 py-2.5 hover:text-gray-900 focus:z-10">Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-    
-            <div id="bootstrap-modal" tabindex="-1" class="fixed inset-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full">
-                <div class="relative w-full max-w-md max-h-full">
-                    <!-- Modal content -->
-                    <div class="relative bg-white rounded-lg shadow">
-                        <!-- Modal header -->
-                        <div class="flex items-center justify-between p-5 border-b rounded-t">
-                            <h3 class="text-xl font-medium text-gray-900 dark:text-white">
-                                Bootstrap
-                            </h3>
-                            <button type="button" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center" data-modal-hide="bootstrap-modal">
-                                <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
-                                <span class="sr-only">Close modal</span>
-                            </button>
-                        </div>
-                        <!-- Modal body -->
-                        <div class="p-6 space-y-6">
-                            <div class="flex flex-row">
-                                <img src="{{ site.baseurl }}/dist/images/skill-icon/bootstrap.svg" class="w-16 h-16 m-3" alt="bootstrap">
-                                <div class="text-sm mt-3">
-                                    <h5 class="font-semibold text-xl">Bootstrap</h5>
-                                    <h6 class="text-cv-light-gray">Other tools or library :</h6>
-                                    <h5>Visual Studio Code, Ruby on Rails, Laravel, etc.</h5>
-                                </div>
-                            </div>
-                            <hr class="h-px my-8 bg-gray-200 border-0">
-                            <p class="text-base leading-relaxed text-gray-500">
-                                I Usually use Bootstrap for front-end theme.
-                            </p>
-                        </div>
-                        <!-- Modal footer -->
-                        <div class="flex items-center p-6 space-x-2 border-t border-gray-200 rounded-b">
-                            <button data-modal-hide="bootstrap-modal" type="button" class="text-gray-500 bg-white ml-auto hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-gray-200 rounded-lg border border-gray-200 text-sm font-medium px-5 py-2.5 hover:text-gray-900 focus:z-10">Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-    
-            <div id="git-modal" tabindex="-1" class="fixed inset-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full">
-                <div class="relative w-full max-w-md max-h-full">
-                    <!-- Modal content -->
-                    <div class="relative bg-white rounded-lg shadow">
-                        <!-- Modal header -->
-                        <div class="flex items-center justify-between p-5 border-b rounded-t">
-                            <h3 class="text-xl font-medium text-gray-900 dark:text-white">
-                                GIT
-                            </h3>
-                            <button type="button" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center" data-modal-hide="git-modal">
-                                <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
-                                <span class="sr-only">Close modal</span>
-                            </button>
-                        </div>
-                        <!-- Modal body -->
-                        <div class="p-6 space-y-6">
-                            <div class="flex flex-row">
-                                <img src="{{ site.baseurl }}/dist/images/skill-icon/git.svg" class="w-16 h-16 m-3" alt="git">
-                                <div class="text-sm mt-3">
-                                    <h5 class="font-semibold text-xl">GIT</h5>
-                                    <h6 class="text-cv-light-gray">Other tools or library :</h6>
-                                    <h5>Visual Studio Code, Github, Gitlab, etc.</h5>
-                                </div>
-                            </div>
-                            <hr class="h-px my-8 bg-gray-200 border-0">
-                            <p class="text-base leading-relaxed text-gray-500">
-                                I usually use GIT for collaboration projects.
-                            </p>
-                        </div>
-                        <!-- Modal footer -->
-                        <div class="flex items-center p-6 space-x-2 border-t border-gray-200 rounded-b">
-                            <button data-modal-hide="git-modal" type="button" class="text-gray-500 bg-white ml-auto hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-gray-200 rounded-lg border border-gray-200 text-sm font-medium px-5 py-2.5 hover:text-gray-900 focus:z-10">Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            {% endfor %}
         </div>
     </section>
+    <!-- END SKILLS SECTION -->
 
+    <!-- START EXPERIENCE SECTION -->
     <section id="experience" class="pt-10 bg-white">
         <div class="container mb-20">
             <div class="inline-flex items-center justify-center w-full mb-12">
@@ -925,65 +216,33 @@ layout: default
             </div>
     
             <div class="w-full lg:w-2/3 mx-auto p-6 bg-white border border-gray-200 hover:shadow-lg transition duration-300 ease-in-out rounded-lg shadow-sm">
-                <ol class="relative border-l border-cv-blue-primary">                  
-                    <li class="ml-6">            
-                        <span class="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -left-3 ring-8 ring-white ">
-                            <svg fill="currentColor" class="w-3 h-3 text-cv-blue-primary-dark" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                                <path clip-rule="evenodd" fill-rule="evenodd" d="M7.5 5.25a3 3 0 013-3h3a3 3 0 013 3v.205c.933.085 1.857.197 2.774.334 1.454.218 2.476 1.483 2.476 2.917v3.033c0 1.211-.734 2.352-1.936 2.752A24.726 24.726 0 0112 15.75c-2.73 0-5.357-.442-7.814-1.259-1.202-.4-1.936-1.541-1.936-2.752V8.706c0-1.434 1.022-2.7 2.476-2.917A48.814 48.814 0 017.5 5.455V5.25zm7.5 0v.09a49.488 49.488 0 00-6 0v-.09a1.5 1.5 0 011.5-1.5h3a1.5 1.5 0 011.5 1.5zm-3 8.25a.75.75 0 100-1.5.75.75 0 000 1.5z"></path>
-                                <path d="M3 18.4v-2.796a4.3 4.3 0 00.713.31A26.226 26.226 0 0012 17.25c2.892 0 5.68-.468 8.287-1.335.252-.084.49-.189.713-.311V18.4c0 1.452-1.047 2.728-2.523 2.923-2.12.282-4.282.427-6.477.427a49.19 49.19 0 01-6.477-.427C4.047 21.128 3 19.852 3 18.4z"></path>
-                            </svg>
-                        </span>
-                        <div class="flex flex-col md:flex-row md:justify-between text-cv-dark">
-                            <h3 class="flex items-center mb-1 text-xl md:text-2xl font-semibold ">Junior Ruby on Rails Developer</h3>
-                            <h3 class="flex items-center mb-1 text-x md:text-xl font-normal">Dec 2022 - Mar 2023</h3>
-                        </div>
-                        <h4 class="flex items-center mb-1 text-x md:text-xl font-normal text-cv-dark">PT. Supirin Indonesia Maju | Freelance</h4>
-                        <h4 class="flex items-center mb-1 text-x md:text-xl font-normal text-cv-dark">Jakarta, Indonesia</h4>
-                        <ul class="w-full space-y-1 mb-4 list-disc list-inside text-base font-normal text-cv-light-gray ">
-                            <li>
-                                Successfully solved software bugs by analyzing tickets and implementing fixes in a timely manner.
-                            </li>
-                            <li>
-                                Developed new software features to enhance system functionality and user experience.
-                            </li>
-                            <li>
-                                Maintained code quality and scalability by following best practices and utilizing appropriate software development tools.
-                            </li>
-                            <li>
-                                Continued to enhance skills and knowledge of Ruby on Rails by keeping up-to-date with the latest developments and actively seeking out new learning opportunities.
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="ml-6">            
-                        <span class="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -left-3 ring-8 ring-white ">
-                            <svg fill="currentColor" class="w-3 h-3 text-cv-blue-primary-dark" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                                <path clip-rule="evenodd" fill-rule="evenodd" d="M7.5 5.25a3 3 0 013-3h3a3 3 0 013 3v.205c.933.085 1.857.197 2.774.334 1.454.218 2.476 1.483 2.476 2.917v3.033c0 1.211-.734 2.352-1.936 2.752A24.726 24.726 0 0112 15.75c-2.73 0-5.357-.442-7.814-1.259-1.202-.4-1.936-1.541-1.936-2.752V8.706c0-1.434 1.022-2.7 2.476-2.917A48.814 48.814 0 017.5 5.455V5.25zm7.5 0v.09a49.488 49.488 0 00-6 0v-.09a1.5 1.5 0 011.5-1.5h3a1.5 1.5 0 011.5 1.5zm-3 8.25a.75.75 0 100-1.5.75.75 0 000 1.5z"></path>
-                                <path d="M3 18.4v-2.796a4.3 4.3 0 00.713.31A26.226 26.226 0 0012 17.25c2.892 0 5.68-.468 8.287-1.335.252-.084.49-.189.713-.311V18.4c0 1.452-1.047 2.728-2.523 2.923-2.12.282-4.282.427-6.477.427a49.19 49.19 0 01-6.477-.427C4.047 21.128 3 19.852 3 18.4z"></path>
-                            </svg>
-                        </span>
-                        <div class="flex flex-col md:flex-row md:justify-between text-cv-dark">
-                            <h3 class="flex items-center mb-1 text-xl md:text-2xl font-semibold ">Web Developer</h3>
-                            <h3 class="flex items-center mb-1 text-x md:text-xl font-normal">April 2022 - Jun 2022</h3>
-                        </div>
-                        <h4 class="flex items-center mb-1 text-x md:text-xl font-normal text-cv-dark">PT. Basicteknologi Intersolusi Tersinergi | Internship</h4>
-                        <h4 class="flex items-center mb-1 text-x md:text-xl font-normal text-cv-dark">Bandung, Indonesia</h4>
-                        <ul class="w-full space-y-1 mb-4 list-disc list-inside text-base font-normal text-cv-light-gray ">
-                            <li>
-                                Collaborated with a team to develop and maintain web applications for clients, including troubleshooting and resolving software bugs.
-                            </li>
-                            <li>
-                                Committed to delivering high-quality software and continuously learning and growing in the field.
-                            </li>
-                            <li>
-                                Actively sought out new learning opportunities, keeping up-to-date with the latest developments in web development and applying that knowledge to projects.
-                            </li>
-                        </ul>
-                    </li>
+                <ol class="relative border-l border-cv-blue-primary">
+                    {% for experience in site.experiences %}
+                        <li class="ml-6">            
+                            <span class="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -left-3 ring-8 ring-white ">
+                                <svg fill="currentColor" class="w-3 h-3 text-cv-blue-primary-dark" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                    <path clip-rule="evenodd" fill-rule="evenodd" d="M7.5 5.25a3 3 0 013-3h3a3 3 0 013 3v.205c.933.085 1.857.197 2.774.334 1.454.218 2.476 1.483 2.476 2.917v3.033c0 1.211-.734 2.352-1.936 2.752A24.726 24.726 0 0112 15.75c-2.73 0-5.357-.442-7.814-1.259-1.202-.4-1.936-1.541-1.936-2.752V8.706c0-1.434 1.022-2.7 2.476-2.917A48.814 48.814 0 017.5 5.455V5.25zm7.5 0v.09a49.488 49.488 0 00-6 0v-.09a1.5 1.5 0 011.5-1.5h3a1.5 1.5 0 011.5 1.5zm-3 8.25a.75.75 0 100-1.5.75.75 0 000 1.5z"></path>
+                                    <path d="M3 18.4v-2.796a4.3 4.3 0 00.713.31A26.226 26.226 0 0012 17.25c2.892 0 5.68-.468 8.287-1.335.252-.084.49-.189.713-.311V18.4c0 1.452-1.047 2.728-2.523 2.923-2.12.282-4.282.427-6.477.427a49.19 49.19 0 01-6.477-.427C4.047 21.128 3 19.852 3 18.4z"></path>
+                                </svg>
+                            </span>
+                            <div class="flex flex-col md:flex-row md:justify-between text-cv-dark">
+                                <h3 class="flex items-center mb-1 text-xl md:text-2xl font-semibold ">{{ experience.role }}</h3>
+                                <h3 class="flex items-center mb-1 text-x md:text-xl font-normal">{{ experience.job_date }}</h3>
+                            </div>
+                            <h4 class="flex items-center mb-1 text-x md:text-xl font-normal text-cv-dark">{{ experience.company }}</h4>
+                            <h4 class="flex items-center mb-1 text-x md:text-xl font-normal text-cv-dark">{{ experience.location }}</h4>
+                            <ul class="w-full space-y-1 mb-4 list-disc list-inside text-base font-normal text-cv-light-gray ">
+                                {{ experience.content }}
+                            </ul>
+                        </li>
+                    {% endfor %}
                 </ol>
             </div>
         </div>
     </section>
+    <!-- END EXPERIENCE SECTION -->
 
+    <!-- START PROJECT SECTION -->
     <section id="project" class="pt-10 bg-white">
         <div class="container mb-20">
             <div class="inline-flex items-center justify-center w-full mb-12">
@@ -992,483 +251,89 @@ layout: default
             </div>
     
             <div class="w-full mx-auto grid grid-cols md:grid-cols-3 gap-4">
-                <div class="bg-white border border-gray-200 hover:shadow-lg transition duration-300 ease-in-out rounded-lg shadow-sm cursor-pointer" data-modal-target="supirin-modal" data-modal-toggle="supirin-modal">
-                    <img src="{{ site.baseurl }}/dist/images/supirin/1.png" class="h-52 md:h-56 lg:h-60 w-full border-b border-gray-200" alt="Supirin">
-                    <h3 class="text-xl font-semibold text-cv-dark my-2 mx-4">Supirin</h3>
-                    <p class="text-base leading-relaxed text-cv-light-gray mb-4 mx-4">
-                        Supirin is an online passenger transportation aggregator is not a taxi service and is not involved in the relationship of Users.
-                    </p>
-                </div>
-                <div class="bg-white border border-gray-200 hover:shadow-lg transition duration-300 ease-in-out rounded-lg shadow-sm cursor-pointer" data-modal-target="basic-modal" data-modal-toggle="basic-modal">
-                    <img src="{{ site.baseurl }}/dist/images/basicschool/1.png" class="h-52 md:h-56 lg:h-60 w-full border-b border-gray-200" alt="Basicschool">
-                    <h3 class="text-xl font-semibold text-cv-dark my-2 mx-4">Basic School</h3>
-                    <p class="text-base leading-relaxed text-cv-light-gray mb-4 mx-4">
-                        Basic School is a learning platform focusing on IT development to improve IT in Indonesia.
-                    </p>
-                </div>
-                <div class="bg-white border border-gray-200 hover:shadow-lg transition duration-300 ease-in-out rounded-lg shadow-sm cursor-pointer" data-modal-target="pdam-modal" data-modal-toggle="pdam-modal">
-                    <img src="{{ site.baseurl }}/dist/images/pdam/1.png" class="h-52 md:h-56 lg:h-60 w-full border-b border-gray-200" alt="PDAM">
-                    <h3 class="text-xl font-semibold text-cv-dark my-2 mx-4">PDAM Boyolali Finance</h3>
-                    <p class="text-base leading-relaxed text-cv-light-gray mb-4 mx-4">
-                        PDAM Boyolali Finance Management Website is a finance management website for a water utility company.
-                    </p>
-                </div>
-                <div class="bg-white border border-gray-200 hover:shadow-lg transition duration-300 ease-in-out rounded-lg shadow-sm cursor-pointer" data-modal-target="central-modal" data-modal-toggle="central-modal">
-                    <img src="{{ site.baseurl }}/dist/images/central/1.png" class="h-52 md:h-56 lg:h-60 w-full border-b border-gray-200" alt="Central" >
-                    <h3 class="text-xl font-semibold text-cv-dark my-2 mx-4">Central Acrylic</h3>
-                    <p class="text-base leading-relaxed text-cv-light-gray mb-4 mx-4">
-                        Central Acrylic is an ordering website for orders made for machines.
-                    </p>
-                </div>
-                <div class="bg-white border border-gray-200 hover:shadow-lg transition duration-300 ease-in-out rounded-lg shadow-sm cursor-pointer" data-modal-target="steady-modal" data-modal-toggle="steady-modal">
-                    <img src="{{ site.baseurl }}/dist/images/steady/2.png" class="h-52 md:h-56 lg:h-60 w-full border-b border-gray-200" alt="Steady">
-                    <h3 class="text-xl font-semibold text-cv-dark my-2 mx-4">Steady Academy</h3>
-                    <p class="text-base leading-relaxed text-cv-light-gray mb-4 mx-4">
-                        Steady Academy is a learning management website that provides users with access to educational resources.
-                    </p>
-                </div>
-                <div class="bg-white border border-gray-200 hover:shadow-lg transition duration-300 ease-in-out rounded-lg shadow-sm cursor-pointer" data-modal-target="spp-modal" data-modal-toggle="spp-modal">
-                    <img src="{{ site.baseurl }}/dist/images/spp/1.png" class="h-52 md:h-56 lg:h-60 w-full border-b border-gray-200" alt="spp">
-                    <h3 class="text-xl font-semibold text-cv-dark my-2 mx-4">SPPayment</h3>
-                    <p class="text-base leading-relaxed text-cv-light-gray mb-4 mx-4">
-                        SPPayment is a web-based payment system that simplifies school fee payments for parents.
-                    </p>
-                </div>
+                {% for project in site.projects %}
+                    <div class="bg-white border border-gray-200 hover:shadow-lg transition duration-300 ease-in-out rounded-lg shadow-sm cursor-pointer" data-modal-target="{{ project.modal_id }}" data-modal-toggle="{{ project.modal_id }}">
+                        <img src="{{ site.baseurl }}/{{ project.preview_image }}" class="h-52 md:h-56 lg:h-60 w-full border-b border-gray-200" alt="{{ project.name }}">
+                        <h3 class="text-xl font-semibold text-cv-dark my-2 mx-4">{{ project.name }}</h3>
+                        <p class="text-base leading-relaxed text-cv-light-gray mb-4 mx-4">
+                            {{ project.short_description }}
+                        </p>
+                    </div>
+                {% endfor %}
             </div>
         </div>
 
-        <div id="basic-modal" tabindex="-1" class="fixed z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto inset-0 h-[calc(100%-1rem)] max-h-full">
-            <div class="relative w-full max-w-4xl max-h-full">
-                <!-- Modal content -->
-                <div class="relative bg-white rounded-lg shadow">
-                    <!-- Modal header -->
-                    <div class="flex items-center justify-between p-5 border-b rounded-t dark:border-gray-600">
-                        <h3 class="text-xl font-medium text-gray-900 dark:text-white">
-                            Basic School Project
-                        </h3>
-                        <button type="button" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-600 dark:hover:text-white" data-modal-hide="basic-modal">
-                            <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
-                            <span class="sr-only">Close modal</span>
-                        </button>
-                    </div>
-                    <!-- Modal body -->
-                    <div class="p-6 space-y-6 h-80 overflow-y-auto md:h-full">
-                        <div class="flex flex-col">
+        {% for project in site.projects %}
+            <div id="{{ project.modal_id }}" tabindex="-1" class="fixed z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto inset-0 h-[calc(100%-1rem)] max-h-full">
+                <div class="relative w-full max-w-4xl max-h-full">
+                    <!-- Modal content -->
+                    <div class="relative bg-white rounded-lg">
+                        <!-- Modal header -->
+                        <div class="flex items-center justify-between p-5 border-b rounded-t">
+                            <h3 class="text-xl font-medium text-cv-dark">
+                                {{ project.name }} Project
+                            </h3>
+                            <button type="button" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center" data-modal-hide="{{ project.modal_id }}">
+                                <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                                <span class="sr-only">Close modal</span>
+                            </button>
+                        </div>
+                        <!-- Modal body -->
+                        <div class="p-6 space-y-6 h-80 overflow-y-auto md:h-full">
+                            <div class="flex flex-col">
 
-                            <div id="animation-carousel" class="relative w-full" data-carousel="static">
-                                <!-- Carousel wrapper -->
-                                <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
-                                    <!-- Item 1 -->
-                                    <div class="hidden duration-200 ease-linear" data-carousel-item>
-                                        <img src="{{ site.baseurl }}/dist/images/basicschool/1.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2" alt="...">
+                                <div id="animation-carousel" class="relative w-full" data-carousel="static">
+                                    <!-- Carousel wrapper -->
+                                    <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
+                                        {% for image in project.images %}
+                                            <div class="hidden duration-200 ease-linear" data-carousel-item>
+                                                <img src="{{ site.baseurl }}/{{ image.url }}" class="absolute block w-full -translate-x-1/2 -translate-y-1/2" alt="{{ project.name }}">
+                                            </div>
+                                        {% endfor %}
                                     </div>
-                                    <!-- Item 2 -->
-                                    <div class="hidden duration-200 ease-linear" data-carousel-item>
-                                        <img src="{{ site.baseurl }}/dist/images/basicschool/2.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2" alt="...">
-                                    </div>
+                                    <!-- Slider controls -->
+                                    <button type="button" class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
+                                        <span class="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-cv-blue-primary group-hover:bg-cv-blue-primary-dark group-focus:ring-4 group-focus:ring-cv-blue-primary group-focus:outline-none">
+                                            <svg aria-hidden="true" class="w-5 h-5 sm:w-6 sm:h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+                                            <span class="sr-only">Previous</span>
+                                        </span>
+                                    </button>
+                                    <button type="button" class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
+                                        <span class="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-cv-blue-primary group-hover:bg-cv-blue-primary-dark group-focus:ring-4 group-focus:ring-cv-bg-cv-blue-primary group-focus:outline-none">
+                                            <svg aria-hidden="true" class="w-5 h-5 text-white sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                                            <span class="sr-only">Next</span>
+                                        </span>
+                                    </button>
                                 </div>
-                                <!-- Slider controls -->
-                                <button type="button" class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
-                                    <span class="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-cv-blue-primary group-hover:bg-cv-blue-primary-dark group-focus:ring-4 group-focus:ring-cv-blue-primary group-focus:outline-none">
-                                        <svg aria-hidden="true" class="w-5 h-5 sm:w-6 sm:h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
-                                        <span class="sr-only">Previous</span>
-                                    </span>
-                                </button>
-                                <button type="button" class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
-                                    <span class="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-cv-blue-primary group-hover:bg-cv-blue-primary-dark group-focus:ring-4 group-focus:ring-cv-bg-cv-blue-primary group-focus:outline-none">
-                                        <svg aria-hidden="true" class="w-5 h-5 text-white sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
-                                        <span class="sr-only">Next</span>
-                                    </span>
-                                </button>
-                            </div>
-                            <hr class="h-px mt-2 bg-gray-200 border-0">
-                             <div class="text-sm mt-3">
-                                <h5 class="font-semibold text-xl">Basic School</h5>
-                                <h6 class="font-semibold text-cv-dark-gray my-1">Roles :</h6>
-                                <h5 class="text-cv-light-gray">Fullstack Web Developer</h5>
-                                <h6 class="font-semibold text-cv-dark-gray my-1">Technologies Used :</h6>
-                                <h5 class="text-cv-light-gray">Laravel, MySQL, Bootstrap, GIT, HTML/CSS/JS</h5>
-                                <h6 class="font-semibold text-cv-dark-gray my-1">Description :</h6>
-                                <p class="text-cv-light-gray">
-                                    Basic School is a learning platform focusing on IT development to improve IT in Indonesia. In this project, I worked as a full-stack web developer, implementing new features and layouts. The project is currently maintained by PT. Basicteknologi Intersolusi Tersinergi at
-                                    <a href="https://school.basicteknologi.co.id" target="_blank" class="text-cv-blue-primary-dark">https://school.basicteknologi.co.id</a>
-                                </p>
-                            </div>
-                        </div>                        
-                    </div>
-                    <!-- Modal footer -->
-                    <div class="flex items-center p-6 space-x-2 border-t border-gray-200 rounded-b">
-                        <button data-modal-hide="basic-modal" type="button" class="text-gray-500 bg-white ml-auto hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-gray-200 rounded-lg border border-gray-200 text-sm font-medium px-5 py-2.5 hover:text-gray-900 focus:z-10">Close</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div id="pdam-modal" tabindex="-1" class="fixed z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto inset-0 h-[calc(100%-1rem)] max-h-full">
-            <div class="relative w-full max-w-4xl max-h-full">
-                <!-- Modal content -->
-                <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
-                    <!-- Modal header -->
-                    <div class="flex items-center justify-between p-5 border-b rounded-t dark:border-gray-600">
-                        <h3 class="text-xl font-medium text-gray-900 dark:text-white">
-                            PDAM Boyolali Finance Project
-                        </h3>
-                        <button type="button" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-600 dark:hover:text-white" data-modal-hide="pdam-modal">
-                            <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
-                            <span class="sr-only">Close modal</span>
-                        </button>
-                    </div>
-                    <!-- Modal body -->
-                    <div class="p-6 space-y-6 h-80 overflow-y-auto md:h-full">
-                        <div class="flex flex-col">
-
-                            <div id="animation-carousel" class="relative w-full" data-carousel="static">
-                                <!-- Carousel wrapper -->
-                                <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
-                                    <!-- Item 1 -->
-                                    <div class="hidden duration-200 ease-linear" data-carousel-item>
-                                        <img src="{{ site.baseurl }}/dist/images/pdam/1.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2" alt="...">
-                                    </div>
-                                    <!-- Item 2 -->
-                                    <div class="hidden duration-200 ease-linear" data-carousel-item>
-                                        <img src="{{ site.baseurl }}/dist/images/pdam/2.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2" alt="...">
-                                    </div>
+                                <hr class="h-px mt-2 bg-gray-200 border-0">
+                                <div class="text-sm mt-3">
+                                    <h5 class="font-semibold text-xl text-cv-dark">{{ project.name }}</h5>
+                                    <h6 class="font-semibold text-cv-dark-gray my-1">Roles :</h6>
+                                    <h5 class="text-cv-light-gray">{{ project.role }}</h5>
+                                    <h6 class="font-semibold text-cv-dark-gray my-1">Technologies Used :</h6>
+                                    <h5 class="text-cv-light-gray">{{ project.technologies_used }}</h5>
+                                    <h6 class="font-semibold text-cv-dark-gray my-1">Description :</h6>
+                                    <div class="text-cv-light-gray">{{ project.content | markdownify  }} </div>
                                 </div>
-                                <!-- Slider controls -->
-                                <button type="button" class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
-                                    <span class="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-cv-blue-primary group-hover:bg-cv-blue-primary-dark group-focus:ring-4 group-focus:ring-cv-blue-primary group-focus:outline-none">
-                                        <svg aria-hidden="true" class="w-5 h-5 sm:w-6 sm:h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
-                                        <span class="sr-only">Previous</span>
-                                    </span>
-                                </button>
-                                <button type="button" class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
-                                    <span class="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-cv-blue-primary group-hover:bg-cv-blue-primary-dark group-focus:ring-4 group-focus:ring-cv-bg-cv-blue-primary group-focus:outline-none">
-                                        <svg aria-hidden="true" class="w-5 h-5 text-white sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
-                                        <span class="sr-only">Next</span>
-                                    </span>
-                                </button>
-                            </div>
-                            <hr class="h-px mt-2 bg-gray-200 border-0">
-                             <div class="text-sm mt-3">
-                                <h5 class="font-semibold text-xl">PDAM Boyolali Finance</h5>
-                                <h6 class="font-semibold text-cv-dark-gray my-1">Roles :</h6>
-                                <h5 class="text-cv-light-gray">Fullstack Web Developer</h5>
-                                <h6 class="font-semibold text-cv-dark-gray my-1">Technologies Used :</h6>
-                                <h5 class="text-cv-light-gray">Laravel, MySQL, Bootstrap, GIT, HTML/CSS/JS</h5>
-                                <h6 class="font-semibold text-cv-dark-gray my-1">Description :</h6>
-                                <p class="text-cv-light-gray">
-                                    PDAM Boyolali Finance Management Website is a finance management website for a water utility company. My responsibilities included showing data from the back- end to the view. The project is currently maintained by PT.Basicteknologi Intersolusi Tersinergi.
-                                </p>
-                            </div>
-                        </div>                        
-                    </div>
-                    <!-- Modal footer -->
-                    <div class="flex items-center p-6 space-x-2 border-t border-gray-200 rounded-b">
-                        <button data-modal-hide="pdam-modal" type="button" class="text-gray-500 bg-white ml-auto hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-gray-200 rounded-lg border border-gray-200 text-sm font-medium px-5 py-2.5 hover:text-gray-900 focus:z-10">Close</button>
+                            </div>                        
+                        </div>
+                        <!-- Modal footer -->
+                        <div class="flex items-center p-6 space-x-2 border-t border-gray-200 rounded-b">
+                            <button data-modal-hide="{{ project.modal_id }}" type="button" class="text-gray-500 bg-white ml-auto hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-gray-200 rounded-lg border border-gray-200 text-sm font-medium px-5 py-2.5 hover:text-gray-900 focus:z-10">Close</button>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-
-        <div id="supirin-modal" tabindex="-1" class="fixed z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto inset-0 h-[calc(100%-1rem)] max-h-full">
-            <div class="relative w-full max-w-4xl max-h-full">
-                <!-- Modal content -->
-                <div class="relative bg-white rounded-lg">
-                    <!-- Modal header -->
-                    <div class="flex items-center justify-between p-5 border-b rounded-t dark:border-gray-600">
-                        <h3 class="text-xl font-medium text-gray-900 dark:text-white">
-                            Supirin Project
-                        </h3>
-                        <button type="button" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-600 dark:hover:text-white" data-modal-hide="supirin-modal">
-                            <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
-                            <span class="sr-only">Close modal</span>
-                        </button>
-                    </div>
-                    <!-- Modal body -->
-                    <div class="p-6 space-y-6 h-80 overflow-y-auto md:h-full">
-                        <div class="flex flex-col">
-
-                            <div id="animation-carousel" class="relative w-full" data-carousel="static">
-                                <!-- Carousel wrapper -->
-                                <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
-                                    <!-- Item 1 -->
-                                    <div class="hidden duration-200 ease-linear" data-carousel-item>
-                                        <img src="{{ site.baseurl }}/dist/images/supirin/1.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2" alt="...">
-                                    </div>
-                                    <!-- Item 2 -->
-                                    <div class="hidden duration-200 ease-linear" data-carousel-item>
-                                        <img src="{{ site.baseurl }}/dist/images/supirin/2.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2" alt="...">
-                                    </div>
-                                    <!-- Item 3 -->
-                                    <div class="hidden duration-200 ease-linear" data-carousel-item>
-                                        <img src="{{ site.baseurl }}/dist/images/supirin/3.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2" alt="...">
-                                    </div>
-                                    <!-- Item 4 -->
-                                    <div class="hidden duration-200 ease-linear" data-carousel-item>
-                                        <img src="{{ site.baseurl }}/dist/images/supirin/4.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2" alt="...">
-                                    </div>
-                                </div>
-                                <!-- Slider controls -->
-                                <button type="button" class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
-                                    <span class="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-cv-blue-primary group-hover:bg-cv-blue-primary-dark group-focus:ring-4 group-focus:ring-cv-blue-primary group-focus:outline-none">
-                                        <svg aria-hidden="true" class="w-5 h-5 sm:w-6 sm:h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
-                                        <span class="sr-only">Previous</span>
-                                    </span>
-                                </button>
-                                <button type="button" class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
-                                    <span class="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-cv-blue-primary group-hover:bg-cv-blue-primary-dark group-focus:ring-4 group-focus:ring-cv-bg-cv-blue-primary group-focus:outline-none">
-                                        <svg aria-hidden="true" class="w-5 h-5 text-white sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
-                                        <span class="sr-only">Next</span>
-                                    </span>
-                                </button>
-                            </div>
-                            <hr class="h-px mt-2 bg-gray-200 border-0">
-                             <div class="text-sm mt-3">
-                                <h5 class="font-semibold text-xl">Supirin</h5>
-                                <h6 class="font-semibold text-cv-dark-gray my-1">Roles :</h6>
-                                <h5 class="text-cv-light-gray">Ruby on Rails Developer</h5>
-                                <h6 class="font-semibold text-cv-dark-gray my-1">Technologies Used :</h6>
-                                <h5 class="text-cv-light-gray">Ruby on Rails, PostgreSQL, Sidekiq, Redis, GIT, Flutter, HTML/CSS/JS</h5>
-                                <h6 class="font-semibold text-cv-dark-gray my-1">Description :</h6>
-                                <p class="text-cv-light-gray">
-                                    Supirin is an online passenger transportation aggregator is not a taxi service and is not involved in the relationship of Users. My responsiblities included solving bugs and building new features based on tickets on Github workflow by the tech lead. The project is currently maintained by PT. Supirin Indonesia Maju at 
-                                    <a href="https://supirin.id" target="_blank" class="text-cv-blue-primary-dark">https://supirin.id</a>
-                                </p>
-                            </div>
-                        </div>                        
-                    </div>
-                    <!-- Modal footer -->
-                    <div class="flex items-center p-6 space-x-2 border-t border-gray-200 rounded-b">
-                        <button data-modal-hide="supirin-modal" type="button" class="text-gray-500 bg-white ml-auto hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-gray-200 rounded-lg border border-gray-200 text-sm font-medium px-5 py-2.5 hover:text-gray-900 focus:z-10">Close</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div id="central-modal" tabindex="-1" class="fixed z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto inset-0 h-[calc(100%-1rem)] max-h-full">
-            <div class="relative w-full max-w-4xl max-h-full">
-                <!-- Modal content -->
-                <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
-                    <!-- Modal header -->
-                    <div class="flex items-center justify-between p-5 border-b rounded-t dark:border-gray-600">
-                        <h3 class="text-xl font-medium text-gray-900 dark:text-white">
-                            Central Acrylic Project
-                        </h3>
-                        <button type="button" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-600 dark:hover:text-white" data-modal-hide="central-modal">
-                            <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
-                            <span class="sr-only">Close modal</span>
-                        </button>
-                    </div>
-                    <!-- Modal body -->
-                    <div class="p-6 space-y-6 h-80 overflow-y-auto md:h-full">
-                        <div class="flex flex-col">
-
-                            <div id="animation-carousel" class="relative w-full" data-carousel="static">
-                                <!-- Carousel wrapper -->
-                                <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
-                                    <!-- Item 1 -->
-                                    <div class="hidden duration-200 ease-linear" data-carousel-item>
-                                        <img src="{{ site.baseurl }}/dist/images/central/1.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2" alt="...">
-                                    </div>
-                                    <!-- Item 2 -->
-                                    <div class="hidden duration-200 ease-linear" data-carousel-item>
-                                        <img src="{{ site.baseurl }}/dist/images/central/2.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2" alt="...">
-                                    </div>
-                                    <!-- Item 3 -->
-                                    <div class="hidden duration-200 ease-linear" data-carousel-item>
-                                        <img src="{{ site.baseurl }}/dist/images/central/3.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2" alt="...">
-                                    </div>
-                                </div>
-                                <!-- Slider controls -->
-                                <button type="button" class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
-                                    <span class="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-cv-blue-primary group-hover:bg-cv-blue-primary-dark group-focus:ring-4 group-focus:ring-cv-blue-primary group-focus:outline-none">
-                                        <svg aria-hidden="true" class="w-5 h-5 sm:w-6 sm:h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
-                                        <span class="sr-only">Previous</span>
-                                    </span>
-                                </button>
-                                <button type="button" class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
-                                    <span class="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-cv-blue-primary group-hover:bg-cv-blue-primary-dark group-focus:ring-4 group-focus:ring-cv-bg-cv-blue-primary group-focus:outline-none">
-                                        <svg aria-hidden="true" class="w-5 h-5 text-white sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
-                                        <span class="sr-only">Next</span>
-                                    </span>
-                                </button>
-                            </div>
-                            <hr class="h-px mt-2 bg-gray-200 border-0">
-                             <div class="text-sm mt-3">
-                                <h5 class="font-semibold text-xl">Central Acrylic</h5>
-                                <h6 class="font-semibold text-cv-dark-gray my-1">Roles :</h6>
-                                <h5 class="text-cv-light-gray">Fullstack Web Developer</h5>
-                                <h6 class="font-semibold text-cv-dark-gray my-1">Technologies Used :</h6>
-                                <h5 class="text-cv-light-gray">PHP native, MySQL, Bootstrap, HTML/CSS/JS</h5>
-                                <h6 class="font-semibold text-cv-dark-gray my-1">Description :</h6>
-                                <p class="text-cv-light-gray">
-                                    Central Acrylic is an ordering website for orders made for machines. This project was given to me by a college student who needed a website for his thesis. I built the entire project from scratch. This project is hosted on 
-                                    <a href="http://central-acrylic.my.id" target="_blank" class="text-cv-blue-primary-dark">http://central-acrylic.my.id</a>
-                                </p>
-                            </div>
-                        </div>                        
-                    </div>
-                    <!-- Modal footer -->
-                    <div class="flex items-center p-6 space-x-2 border-t border-gray-200 rounded-b">
-                        <button data-modal-hide="central-modal" type="button" class="text-gray-500 bg-white ml-auto hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-gray-200 rounded-lg border border-gray-200 text-sm font-medium px-5 py-2.5 hover:text-gray-900 focus:z-10">Close</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div id="steady-modal" tabindex="-1" class="fixed z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto inset-0 h-[calc(100%-1rem)] max-h-full">
-            <div class="relative w-full max-w-4xl max-h-full">
-                <!-- Modal content -->
-                <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
-                    <!-- Modal header -->
-                    <div class="flex items-center justify-between p-5 border-b rounded-t dark:border-gray-600">
-                        <h3 class="text-xl font-medium text-gray-900 dark:text-white">
-                            Steady Academy Project
-                        </h3>
-                        <button type="button" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-600 dark:hover:text-white" data-modal-hide="steady-modal">
-                            <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
-                            <span class="sr-only">Close modal</span>
-                        </button>
-                    </div>
-                    <!-- Modal body -->
-                    <div class="p-6 space-y-6 h-80 overflow-y-auto md:h-full">
-                        <div class="flex flex-col">
-
-                            <div id="animation-carousel" class="relative w-full" data-carousel="static">
-                                <!-- Carousel wrapper -->
-                                <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
-                                    <!-- Item 1 -->
-                                    <div class="hidden duration-200 ease-linear" data-carousel-item>
-                                        <img src="{{ site.baseurl }}/dist/images/steady/1.png" loading="eager" class="absolute block w-full -translate-x-1/2 -translate-y-1/2" alt="...">
-                                    </div>
-                                    <!-- Item 2 -->
-                                    <div class="hidden duration-200 ease-linear" data-carousel-item>
-                                        <img src="{{ site.baseurl }}/dist/images/steady/2.png" loading="eager" class="absolute block w-full -translate-x-1/2 -translate-y-1/2" alt="...">
-                                    </div>
-                                    <!-- Item 3 -->
-                                    <div class="hidden duration-200 ease-linear" data-carousel-item>
-                                        <img src="{{ site.baseurl }}/dist/images/steady/3.png" loading="eager" class="absolute block w-full -translate-x-1/2 -translate-y-1/2" alt="...">
-                                    </div>
-                                    <!-- Item 4 -->
-                                    <div class="hidden duration-200 ease-linear" data-carousel-item>
-                                        <img src="{{ site.baseurl }}/dist/images/steady/4.png" loading="eager" class="absolute block w-full -translate-x-1/2 -translate-y-1/2" alt="...">
-                                    </div>
-                                    <!-- Item 5 -->
-                                    <div class="hidden duration-200 ease-linear" data-carousel-item>
-                                        <img src="{{ site.baseurl }}/dist/images/steady/5.png" loading="eager" class="absolute block w-full -translate-x-1/2 -translate-y-1/2" alt="...">
-                                    </div>
-                                </div>
-                                <!-- Slider controls -->
-                                <button type="button" class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
-                                    <span class="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-cv-blue-primary group-hover:bg-cv-blue-primary-dark group-focus:ring-4 group-focus:ring-cv-blue-primary group-focus:outline-none">
-                                        <svg aria-hidden="true" class="w-5 h-5 sm:w-6 sm:h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
-                                        <span class="sr-only">Previous</span>
-                                    </span>
-                                </button>
-                                <button type="button" class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
-                                    <span class="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-cv-blue-primary group-hover:bg-cv-blue-primary-dark group-focus:ring-4 group-focus:ring-cv-bg-cv-blue-primary group-focus:outline-none">
-                                        <svg aria-hidden="true" class="w-5 h-5 text-white sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
-                                        <span class="sr-only">Next</span>
-                                    </span>
-                                </button>
-                            </div>
-                            <hr class="h-px mt-2 bg-gray-200 border-0">
-                             <div class="text-sm mt-3">
-                                <h5 class="font-semibold text-xl">Steady Academy</h5>
-                                <h6 class="font-semibold text-cv-dark-gray my-1">Roles :</h6>
-                                <h5 class="text-cv-light-gray">Fullstack Web Developer & Flutter</h5>
-                                <h6 class="font-semibold text-cv-dark-gray my-1">Technologies Used :</h6>
-                                <h5 class="text-cv-light-gray">Laravel, Firebase, Bootstrap, Livewire, Flutter, HTML/CSS/JS</h5>
-                                <h6 class="font-semibold text-cv-dark-gray my-1">Description :</h6>
-                                <p class="text-cv-light-gray">
-                                    Steady Academy is a learning management website that provides users with access to educational resources. That project was Inspired by Udemy and BasicSchool and was build to help friends who had difficulty learning due to the pandemic. I led a team of 6 members and was also responsible for helping with Flutter for the UI. The repository project is on my github at 
-                                    <a href="https://github.com/Djebreds" target="_blank" class="text-cv-blue-primary-dark">https://github.com/Djebreds</a>
-                                </p>
-                            </div>
-                        </div>                        
-                    </div>
-                    <!-- Modal footer -->
-                    <div class="flex items-center p-6 space-x-2 border-t border-gray-200 rounded-b">
-                        <button data-modal-hide="steady-modal" type="button" class="text-gray-500 bg-white ml-auto hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-gray-200 rounded-lg border border-gray-200 text-sm font-medium px-5 py-2.5 hover:text-gray-900 focus:z-10">Close</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div id="spp-modal" tabindex="-1" class="fixed z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto inset-0 h-[calc(100%-1rem)] max-h-full">
-            <div class="relative w-full max-w-4xl max-h-full">
-                <!-- Modal content -->
-                <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
-                    <!-- Modal header -->
-                    <div class="flex items-center justify-between p-5 border-b rounded-t dark:border-gray-600">
-                        <h3 class="text-xl font-medium text-gray-900 dark:text-white">
-                            SPPayment Project
-                        </h3>
-                        <button type="button" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-600 dark:hover:text-white" data-modal-hide="spp-modal">
-                            <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
-                            <span class="sr-only">Close modal</span>
-                        </button>
-                    </div>
-                    <!-- Modal body -->
-                    <div class="p-6 space-y-6 h-80 overflow-y-auto md:h-full">
-                        <div class="flex flex-col">
-
-                            <div id="animation-carousel" class="relative w-full" data-carousel="static">
-                                <!-- Carousel wrapper -->
-                                <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
-                                    <!-- Item 1 -->
-                                    <div class="hidden duration-200 ease-linear" data-carousel-item>
-                                        <img src="{{ site.baseurl }}/dist/images/spp/1.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2" alt="...">
-                                    </div>
-                                    <!-- Item 2 -->
-                                    <div class="hidden duration-200 ease-linear" data-carousel-item>
-                                        <img src="{{ site.baseurl }}/dist/images/spp/2.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2" alt="...">
-                                    </div>
-                                </div>
-                                <!-- Slider controls -->
-                                <button type="button" class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
-                                    <span class="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-cv-blue-primary group-hover:bg-cv-blue-primary-dark group-focus:ring-4 group-focus:ring-cv-blue-primary group-focus:outline-none">
-                                        <svg aria-hidden="true" class="w-5 h-5 sm:w-6 sm:h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
-                                        <span class="sr-only">Previous</span>
-                                    </span>
-                                </button>
-                                <button type="button" class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
-                                    <span class="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-cv-blue-primary group-hover:bg-cv-blue-primary-dark group-focus:ring-4 group-focus:ring-cv-bg-cv-blue-primary group-focus:outline-none">
-                                        <svg aria-hidden="true" class="w-5 h-5 text-white sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
-                                        <span class="sr-only">Next</span>
-                                    </span>
-                                </button>
-                            </div>
-                            <hr class="h-px mt-2 bg-gray-200 border-0">
-                             <div class="text-sm mt-3">
-                                <h5 class="font-semibold text-xl">SPPayment</h5>
-                                <h6 class="font-semibold text-cv-dark-gray my-1">Roles :</h6>
-                                <h5 class="text-cv-light-gray">Fullstack Web Developer</h5>
-                                <h6 class="font-semibold text-cv-dark-gray my-1">Technologies Used :</h6>
-                                <h5 class="text-cv-light-gray">Ruby on Rails, MySQL, Bootstrap, Midtrans, AJAX, Jquery, HTML/CSS/JS</h5>
-                                <h6 class="font-semibold text-cv-dark-gray my-1">Description :</h6>
-                                <p class="text-cv-light-gray">
-                                    SPPayment is a web-based payment system that simplifies school fee payments for parents. It offers a user-friendly platform and a range of payment options, making it easier to pay school fees online. The repository project is on my github at
-                                    <a href="https://github.com/Djebreds" target="_blank" class="text-cv-blue-primary-dark">https://github.com/Djebreds</a>
-                                </p>
-                            </div>
-                        </div>                        
-                    </div>
-                    <!-- Modal footer -->
-                    <div class="flex items-center p-6 space-x-2 border-t border-gray-200 rounded-b">
-                        <button data-modal-hide="spp-modal" type="button" class="text-gray-500 bg-white ml-auto hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-gray-200 rounded-lg border border-gray-200 text-sm font-medium px-5 py-2.5 hover:text-gray-900 focus:z-10">Close</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
+        {% endfor %}
     </section>
+    <!-- END PROJECT SECTION -->
 
+    <!-- START CONTACT SECTION -->
     <section id="contact" class="pt-10 bg-cv-dark">
         <div class="container pb-20">
             <div class="inline-flex items-center justify-center w-full">
                 <hr class="w-full h-2 my-8 bg-cv-blue-primary border-0">
-                <span class="absolute px-3 font-medium text-center text-3xl md:text-4xl text-white -translate-x-1/2 bg-cv-dark left-50 dark:text-white dark:bg-gray-900">Contact</span>
+                <span class="absolute px-3 font-medium text-center text-3xl md:text-4xl text-white -translate-x-1/2 bg-cv-dark left-50">Contact</span>
             </div>
 
             <div class="w-full flex flex-col md:flex-row md:justify-between">
@@ -1521,6 +386,8 @@ layout: default
             </div>
         </div>
     </section>
+    <!-- END CONTACT SECTION -->
+
     <footer class="text-center bg-cv-dark text-white font-normal pb-5">
         <p class="text-sm border-t border-cv-light-gray pt-5">
             Created by <a href="" class="text-cv-blue-primary font-semibold">Refi Ahmad Fauzan</a>, with <a href="" class="text-sky-500 font-semibold">Tailwind CSS & Jekyll</a> © 2023
