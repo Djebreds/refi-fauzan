@@ -1,5 +1,10 @@
 module.exports = {
   purge: [`_site/**/*.html`],
+  plugins: [require('flowbite/plugin')],
+  content: [
+    './node_modules/flowbite/**/*.js',
+    './index.html',
+  ],
   theme: {
     container: {
       center: true,
@@ -22,9 +27,4 @@ module.exports = {
     },
   },
   variants: {},
-  plugins: [require('flowbite/plugin')],
-  content: [
-    './node_modules/flowbite/**/*.js',
-    './index.html',
-  ],
 };

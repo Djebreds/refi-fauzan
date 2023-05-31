@@ -1,5 +1,5 @@
-title: Tailwind Jekyll Starter Kit
-description: A starter kit for using Tailwind with Jekyll
+title: Refi Ahmad Fauzan
+description: Portofolio
 
 exclude:
   - Gemfile
@@ -13,3 +13,12 @@ exclude:
   - src
   - tailwind.config.js
   - netlify.toml
+
+collections:
+  educations:
+  certifications:
+  abouts:
+  skills:
+  languages:
+  experiences:
+  projects:
