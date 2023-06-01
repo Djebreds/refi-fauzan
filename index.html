@@ -2,9 +2,11 @@
 layout: default
 ---
 
-<div class="bg-white relative z-2">
+
+
+<div class="bg-white relative z-1">
     
-    <div id="cv-modal" tabindex="-1" class="fixed inset-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full">
+    <div id="cv-modal" tabindex="-1" class="bg-cv-dark bg-opacity-50 fixed inset-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full">
         <div class="relative w-full max-w-4xl max-h-full">
             <!-- Modal content -->
             <div class="relative bg-white rounded-lg shadow">
@@ -166,7 +168,7 @@ layout: default
 
         <div class="modals"> 
             {% for skill in site.skills %}
-                <div id="{{ skill.modal_id }}" tabindex="-1" class="fixed inset-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full">
+                <div id="{{ skill.modal_id }}" tabindex="-1" class="bg-cv-dark bg-opacity-50 fixed inset-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full">
                     <div class="relative w-full max-w-md max-h-full">
                         <!-- Modal content -->
                         <div class="relative bg-white rounded-lg shadow">
@@ -264,7 +266,7 @@ layout: default
         </div>
 
         {% for project in site.projects %}
-            <div id="{{ project.modal_id }}" tabindex="-1" class="fixed z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto inset-0 h-[calc(100%-1rem)] max-h-full">
+            <div id="{{ project.modal_id }}" tabindex="-1" class="bg-cv-dark bg-opacity-50 fixed z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto inset-0 h-[calc(100%-1rem)] max-h-full">
                 <div class="relative w-full max-w-4xl max-h-full">
                     <!-- Modal content -->
                     <div class="relative bg-white rounded-lg">

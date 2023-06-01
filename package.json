@@ -1,13 +1,13 @@
 {
-  "name": "jekyll-starter-tailwind",
+  "name": "portofolio",
   "version": "6.0.0",
-  "description": "A starter kit for using Tailwind with Jekyll",
+  "description": "portofolio",
   "main": "gulpfile.babel.js",
   "devDependencies": {
     "autoprefixer": "10.3.4",
     "babel-preset-env": "1.7.0",
     "babel-register": "6.26.0",
-    "browser-sync": "2.27.4",
+    "browser-sync": "^2.29.3",
     "browsersync": "0.0.1-security",
     "cross-env": "7.0.3",
     "cross-spawn": "7.0.3",
@@ -27,17 +27,18 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/taylorbryant/jekyll-starter-tailwind.git"
+    "url": "https://github.com/Djebreds/portofolio.git"
   },
-  "author": "Taylor Bryant",
+  "author": "Refi",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/taylorbryant/jekyll-starter-tailwind/issues"
+    "url": "https://github.com/Djebreds/portofolio/issues"
   },
   "publishConfig": {
     "access": "public"
   },
   "dependencies": {
+    "browser-sync-client": "^2.29.3",
     "flowbite": "^1.6.5"
   }
 }
