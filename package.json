@@ -39,6 +39,6 @@
   },
   "dependencies": {
     "browser-sync-client": "^2.29.3",
-    "flowbite": "^1.6.5"
+    "flowbite": "^1.8.1"
   }
 }
